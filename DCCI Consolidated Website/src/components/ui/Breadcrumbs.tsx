@@ -1,4 +1,4 @@
-import Link from 'next/link'
+﻿import Link from 'next/link'
 import { ChevronRight, Home } from 'lucide-react'
 
 interface Crumb {
@@ -13,7 +13,7 @@ export default function Breadcrumbs({ crumbs }: { crumbs: Crumb[] }) {
         <li>
           <Link
             href="/"
-            className="flex items-center hover:text-warmgray-900 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-lavender-500 rounded"
+            className="flex items-center hover:text-warmgray-900 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-warmgray-700 rounded"
             aria-label="Home"
           >
             <Home className="w-3.5 h-3.5" aria-hidden />
@@ -25,7 +25,7 @@ export default function Breadcrumbs({ crumbs }: { crumbs: Crumb[] }) {
             {crumb.href && i < crumbs.length - 1 ? (
               <Link
                 href={crumb.href}
-                className="hover:text-warmgray-900 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-lavender-500 rounded"
+                className="hover:text-warmgray-900 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-warmgray-700 rounded"
               >
                 {crumb.label}
               </Link>

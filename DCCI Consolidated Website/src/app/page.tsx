@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import Link from 'next/link'
 import {
   ArrowRight, BookOpen, Phone, MapPin, Calendar,
@@ -31,31 +31,31 @@ const featuredLinks = [
     label: 'Free Doctor-Visit Toolkit',
     description: 'Checklists and questions to bring to your next appointment',
     href: '/signs-diagnosis/toolkit',
-    accent: 'bg-lavender-100 text-lavender-600',
-    border: 'hover:border-lavender-200',
+    accent: 'bg-warmgray-100 text-warmgray-800',
+    border: 'hover:border-warmgray-200',
   },
   {
     icon: MapPin,
     label: 'Find Local Support Groups',
     description: 'Free groups across Leon, Jefferson, and surrounding counties',
     href: '/caregiver-support/support-groups',
-    accent: 'bg-teal-100 text-teal-600',
-    border: 'hover:border-teal-200',
+    accent: 'bg-warmgray-100 text-warmgray-800',
+    border: 'hover:border-warmgray-200',
   },
   {
     icon: Calendar,
     label: 'Upcoming Events',
     description: 'Classes, conferences, and community programs near you',
     href: '/events',
-    accent: 'bg-healthblue-100 text-healthblue-600',
-    border: 'hover:border-healthblue-200',
+    accent: 'bg-warmgray-100 text-warmgray-800',
+    border: 'hover:border-warmgray-200',
   },
   {
     icon: BookOpen,
     label: 'Understanding Dementia',
     description: '10 warning signs, types, stages, and what to expect',
     href: '/signs-diagnosis/warning-signs',
-    accent: 'bg-cream-200 text-warmgray-700',
+    accent: 'bg-warmgray-100 text-warmgray-800',
     border: 'hover:border-warmgray-200',
   },
 ]
@@ -71,18 +71,18 @@ export default function Home() {
   return (
     <>
       {/* Hero */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-lavender-50 via-cream-50 to-white pt-16 pb-24 md:pt-24 md:pb-36">
+      <section className="relative overflow-hidden bg-gradient-to-br from-warmgray-50 via-cream-50 to-white pt-16 pb-24 md:pt-24 md:pb-36">
         {/* Decorative blurs */}
         <div className="absolute inset-0 pointer-events-none" aria-hidden>
-          <div className="absolute -top-32 -right-32 w-[600px] h-[600px] rounded-full bg-lavender-100/50 blur-3xl" />
-          <div className="absolute top-1/2 -left-24 w-72 h-72 rounded-full bg-teal-100/40 blur-3xl" />
-          <div className="absolute bottom-0 right-1/4 w-48 h-48 rounded-full bg-lavender-200/30 blur-2xl" />
+          <div className="absolute -top-32 -right-32 w-[600px] h-[600px] rounded-full bg-warmgray-100/50 blur-3xl" />
+          <div className="absolute top-1/2 -left-24 w-72 h-72 rounded-full bg-warmgray-100/40 blur-3xl" />
+          <div className="absolute bottom-0 right-1/4 w-48 h-48 rounded-full bg-warmgray-200/30 blur-2xl" />
         </div>
 
         <div className="container-main relative">
           <div className="max-w-4xl">
-            <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-lavender-100 text-lavender-700 rounded-full text-xs font-semibold mb-6">
-              <span className="w-1.5 h-1.5 rounded-full bg-lavender-500" aria-hidden />
+            <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-warmgray-100 text-warmgray-900 rounded-full text-xs font-semibold mb-6">
+              <span className="w-1.5 h-1.5 rounded-full bg-warmgray-700" aria-hidden />
               Big Bend Region, Florida
             </div>
 
@@ -108,7 +108,7 @@ export default function Home() {
 
             <p className="text-sm text-warmgray-400">
               Free helpline:{' '}
-              <a href="tel:+18503862778" className="text-lavender-600 font-semibold hover:text-lavender-700 transition-colors">
+              <a href="tel:+18503862778" className="text-warmgray-800 font-semibold hover:text-warmgray-900 transition-colors">
                 {HELPLINE_PHONE}
               </a>
               {' '}· Mon–Fri 9am–5pm
@@ -128,11 +128,11 @@ export default function Home() {
         <div className="flex items-center justify-between mb-10 gap-4">
           <FadeIn>
             <div>
-              <p className="text-sm font-semibold text-lavender-600 uppercase tracking-wider mb-1">Quick access</p>
+              <p className="text-sm font-semibold text-warmgray-800 uppercase tracking-wider mb-1">Quick access</p>
               <h2 id="featured-heading" className="text-3xl font-bold text-warmgray-900">Most helpful resources</h2>
             </div>
           </FadeIn>
-          <Link href="/directory" className="text-sm font-medium text-lavender-600 hover:text-lavender-700 transition-colors flex items-center gap-1 shrink-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-lavender-500 rounded">
+          <Link href="/directory" className="text-sm font-medium text-warmgray-800 hover:text-warmgray-900 transition-colors flex items-center gap-1 shrink-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-warmgray-700 rounded">
             View all <ChevronRight className="w-4 h-4" aria-hidden />
           </Link>
         </div>
@@ -143,18 +143,18 @@ export default function Home() {
               <FadeIn key={item.href} delay={i * 0.08}>
                 <Link
                   href={item.href}
-                  className={`group flex flex-col gap-3 p-5 rounded-2xl bg-white border-2 border-warmgray-100 shadow-card hover:shadow-card-hover hover:-translate-y-1 transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-lavender-500 focus-visible:ring-offset-2 ${item.border} h-full`}
+                  className={`group flex flex-col gap-3 p-5 rounded-2xl bg-white border-2 border-warmgray-100 shadow-card hover:shadow-card-hover hover:-translate-y-1 transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-warmgray-700 focus-visible:ring-offset-2 ${item.border} h-full`}
                 >
                   <div className={`w-10 h-10 rounded-xl flex items-center justify-center ${item.accent}`}>
                     <Icon className="w-5 h-5" aria-hidden />
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-sm font-semibold text-warmgray-900 mb-1 group-hover:text-lavender-700 transition-colors">
+                    <h3 className="text-sm font-semibold text-warmgray-900 mb-1 group-hover:text-warmgray-900 transition-colors">
                       {item.label}
                     </h3>
                     <p className="text-xs text-warmgray-500 leading-relaxed">{item.description}</p>
                   </div>
-                  <div className="flex items-center gap-1 text-xs font-medium text-lavender-600 group-hover:gap-2 transition-all duration-150">
+                  <div className="flex items-center gap-1 text-xs font-medium text-warmgray-800 group-hover:gap-2 transition-all duration-150">
                     Learn more <ArrowRight className="w-3 h-3" aria-hidden />
                   </div>
                 </Link>
@@ -165,7 +165,7 @@ export default function Home() {
       </section>
 
       {/* Stats bar */}
-      <section className="bg-lavender-700 py-14" aria-labelledby="stats-heading">
+      <section className="bg-warmgray-900 py-14" aria-labelledby="stats-heading">
         <h2 id="stats-heading" className="sr-only">Resource network statistics</h2>
         <div className="container-main">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 text-white text-center">
@@ -173,7 +173,7 @@ export default function Home() {
               <FadeIn key={stat.label} delay={i * 0.08}>
                 <div className="flex flex-col gap-1">
                   <span className="text-4xl md:text-5xl font-bold text-white">{stat.value}</span>
-                  <span className="text-sm text-lavender-200 font-medium">{stat.label}</span>
+                  <span className="text-sm text-warmgray-200 font-medium">{stat.label}</span>
                 </div>
               </FadeIn>
             ))}
@@ -186,7 +186,7 @@ export default function Home() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           <FadeIn>
             <div>
-              <p className="text-sm font-semibold text-lavender-600 uppercase tracking-wider mb-2">Why one site?</p>
+              <p className="text-sm font-semibold text-warmgray-800 uppercase tracking-wider mb-2">Why one site?</p>
               <h2 className="text-3xl font-bold text-warmgray-900 mb-5">One place, seven organizations</h2>
               <p className="text-warmgray-500 mb-6 leading-relaxed text-lg">
                 This site brings together resources from seven Big Bend organizations into one easy-to-navigate hub — so you never have to wonder which organization to call.
@@ -194,7 +194,7 @@ export default function Home() {
               <ul className="space-y-3 mb-8" role="list">
                 {partnerOrgs.map((org) => (
                   <li key={org} className="flex items-center gap-3 text-sm text-warmgray-600">
-                    <div className="w-2 h-2 rounded-full bg-lavender-400 shrink-0" aria-hidden />
+                    <div className="w-2 h-2 rounded-full bg-warmgray-400 shrink-0" aria-hidden />
                     {org}
                   </li>
                 ))}
@@ -224,10 +224,7 @@ export default function Home() {
 
       {/* Newsletter */}
       <section
-        className="relative py-20 overflow-hidden"
-        style={{
-          background: 'radial-gradient(ellipse at 20% 50%, rgb(109 40 217 / 0.15) 0%, transparent 60%), radial-gradient(ellipse at 80% 20%, rgb(139 92 246 / 0.12) 0%, transparent 60%), linear-gradient(135deg, #6d28d9 0%, #7c3aed 50%, #5b21b6 100%)',
-        }}
+        className="relative py-20 overflow-hidden bg-warmgray-950"
         aria-labelledby="signup-heading"
       >
         {/* Dot pattern overlay */}
@@ -247,13 +244,13 @@ export default function Home() {
           <h2 id="signup-heading" className="text-3xl md:text-4xl font-bold mb-4">
             Stay connected to local resources
           </h2>
-          <p className="text-lavender-200 text-lg mb-10 max-w-lg mx-auto font-light">
+          <p className="text-warmgray-200 text-lg mb-10 max-w-lg mx-auto font-light">
             Get free updates on new resources, support group schedules, and upcoming events in the Big Bend region.
           </p>
           <div className="max-w-md mx-auto">
             <NewsletterSignup />
           </div>
-          <p className="text-lavender-300/70 text-xs mt-5">No spam. Unsubscribe any time.</p>
+          <p className="text-warmgray-300/70 text-xs mt-5">No spam. Unsubscribe any time.</p>
         </div>
       </section>
     </>

@@ -1,4 +1,4 @@
-'use client'
+﻿'use client'
 
 import { useEffect } from 'react'
 import Link from 'next/link'
@@ -33,7 +33,7 @@ export default function GlobalError({
           <Link href="/" className="btn-secondary">Back to Home</Link>
         </div>
         <p className="text-sm text-warmgray-400 mt-6">
-          Helpline: <a href="tel:+18503862778" className="text-lavender-600 hover:text-lavender-700 font-medium">(850) 386-2778</a>
+          Helpline: <a href="tel:+18503862778" className="text-warmgray-800 hover:text-warmgray-900 font-medium">(850) 386-2778</a>
         </p>
       </div>
     </div>

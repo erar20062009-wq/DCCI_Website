@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import { Phone } from 'lucide-react'
 import Breadcrumbs from '@/components/ui/Breadcrumbs'
 
@@ -35,10 +35,10 @@ const programs = [
 ]
 
 const colorMap: Record<string, string> = {
-  teal: 'bg-teal-100 text-teal-700',
-  lavender: 'bg-lavender-100 text-lavender-700',
-  healthblue: 'bg-healthblue-100 text-healthblue-700',
-  sage: 'bg-sage-100 text-sage-700',
+  teal: 'bg-warmgray-100 text-warmgray-800',
+  lavender: 'bg-warmgray-100 text-warmgray-800',
+  healthblue: 'bg-warmgray-100 text-warmgray-800',
+  sage: 'bg-warmgray-100 text-warmgray-800',
 }
 
 const intakeSteps = [
@@ -62,12 +62,12 @@ export default function InHomePage() {
         These programs help people with dementia remain safely at home while supporting their caregivers. All are accessed through the Elder Helpline — one call opens the door to all of them.
       </p>
 
-      <div className="p-5 rounded-2xl bg-healthblue-50 border border-healthblue-200 mb-8">
-        <p className="text-sm font-semibold text-healthblue-900 mb-1">Start with the Elder Helpline</p>
-        <p className="text-sm text-healthblue-700 mb-3">
+      <div className="p-5 rounded-2xl bg-warmgray-50 border border-warmgray-200 mb-8">
+        <p className="text-sm font-semibold text-warmgray-900 mb-1">Start with the Elder Helpline</p>
+        <p className="text-sm text-warmgray-800 mb-3">
           All of the programs below are accessed through a single intake point. You do not need to know which program you need — the care coordinator will help determine eligibility.
         </p>
-        <a href="tel:+18664674624" className="flex items-center gap-2 text-sm font-bold text-healthblue-700 hover:text-healthblue-900 transition-colors">
+        <a href="tel:+18664674624" className="flex items-center gap-2 text-sm font-bold text-warmgray-800 hover:text-warmgray-900 transition-colors">
           <Phone className="w-4 h-4" aria-hidden />
           866-467-4624 (local) · 1-800-963-5337 (statewide)
         </a>
@@ -88,7 +88,7 @@ export default function InHomePage() {
         <div className="space-y-3">
           {intakeSteps.map((step, i) => (
             <div key={i} className="flex gap-4 p-4 rounded-xl bg-white border border-warmgray-100 shadow-card">
-              <div className="w-8 h-8 rounded-full bg-lavender-100 text-lavender-700 text-sm font-bold flex items-center justify-center shrink-0">{i + 1}</div>
+              <div className="w-8 h-8 rounded-full bg-warmgray-100 text-warmgray-900 text-sm font-bold flex items-center justify-center shrink-0">{i + 1}</div>
               <p className="text-sm text-warmgray-700 leading-relaxed self-center">{step}</p>
             </div>
           ))}

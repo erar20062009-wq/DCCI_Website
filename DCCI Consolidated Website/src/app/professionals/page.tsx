@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import Link from 'next/link'
 import { GraduationCap, Users, ExternalLink, ArrowRight, Shield } from 'lucide-react'
 
@@ -47,9 +47,9 @@ const trainingItems = [
 
 const badgeColors: Record<string, string> = {
   Required: 'bg-emergency-100 text-emergency-700',
-  Volunteer: 'bg-teal-100 text-teal-700',
-  Students: 'bg-lavender-100 text-lavender-700',
-  Training: 'bg-healthblue-100 text-healthblue-700',
+  Volunteer: 'bg-warmgray-100 text-warmgray-800',
+  Students: 'bg-warmgray-100 text-warmgray-800',
+  Training: 'bg-warmgray-100 text-warmgray-800',
 }
 
 export default function ProfessionalsPage() {
@@ -68,7 +68,7 @@ export default function ProfessionalsPage() {
         {/* Training */}
         <section aria-labelledby="training-heading">
           <h2 id="training-heading" className="text-2xl font-bold text-warmgray-900 mb-2 flex items-center gap-2">
-            <GraduationCap className="w-6 h-6 text-lavender-600" aria-hidden />
+            <GraduationCap className="w-6 h-6 text-warmgray-800" aria-hidden />
             Training & Certification
           </h2>
           <p className="text-sm text-warmgray-500 mb-6">
@@ -85,7 +85,7 @@ export default function ProfessionalsPage() {
                 </div>
                 <p className="text-sm text-warmgray-500 mb-3">{item.desc}</p>
                 <a href={item.link} target="_blank" rel="noopener noreferrer"
-                  className="flex items-center gap-1.5 text-sm font-medium text-lavender-600 hover:text-lavender-700 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-lavender-500 rounded">
+                  className="flex items-center gap-1.5 text-sm font-medium text-warmgray-800 hover:text-warmgray-900 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-warmgray-700 rounded">
                   {item.linkLabel} <ExternalLink className="w-3.5 h-3.5" aria-hidden />
                 </a>
               </div>
@@ -96,12 +96,12 @@ export default function ProfessionalsPage() {
         {/* Dementia-friendly community */}
         <section aria-labelledby="dcci-heading">
           <h2 id="dcci-heading" className="text-2xl font-bold text-warmgray-900 mb-4 flex items-center gap-2">
-            <Users className="w-6 h-6 text-lavender-600" aria-hidden />
+            <Users className="w-6 h-6 text-warmgray-800" aria-hidden />
             Dementia-Friendly Community
           </h2>
-          <div className="p-6 rounded-2xl bg-lavender-50 border border-lavender-200">
-            <h3 className="text-lg font-bold text-lavender-900 mb-2">Dementia Care & Cure Initiative (DCCI)</h3>
-            <p className="text-sm text-lavender-700 mb-4">
+          <div className="p-6 rounded-2xl bg-warmgray-50 border border-warmgray-200">
+            <h3 className="text-lg font-bold text-warmgray-900 mb-2">Dementia Care & Cure Initiative (DCCI)</h3>
+            <p className="text-sm text-warmgray-900 mb-4">
               The Florida DOEA's DCCI builds "dementia-caring communities" through local Task Forces and free dementia-sensitivity trainings for businesses, organizations, and faith communities.
             </p>
             <div className="flex flex-wrap gap-3">

@@ -1,4 +1,4 @@
-import SectionSidebar from '@/components/layout/SectionSidebar'
+﻿import SectionSidebar from '@/components/layout/SectionSidebar'
 import SectionHero from '@/components/layout/SectionHero'
 import { DollarSign } from 'lucide-react'
 
@@ -18,8 +18,8 @@ export default function MoneyLegalLayout({ children }: { children: React.ReactNo
         label="Financial & Legal"
         title="Money & Legal Help"
         description="Medicare counseling, Medicaid navigation, financial assistance, and legal planning resources."
-        gradient="bg-gradient-to-b from-sage-50/70 to-white"
-        iconColor="text-sage-600"
+        gradient="bg-gradient-to-b from-warmgray-50/70 to-white"
+        iconColor="text-warmgray-700"
       />
       <div className="container-main py-12 md:py-16">
         <div className="flex gap-10">

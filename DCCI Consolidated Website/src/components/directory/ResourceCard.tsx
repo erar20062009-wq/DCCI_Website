@@ -1,4 +1,4 @@
-import Link from 'next/link'
+﻿import Link from 'next/link'
 import { Phone, Globe, MapPin, Clock, ChevronRight } from 'lucide-react'
 import { cn } from '@/lib/utils/cn'
 import { RESOURCE_CATEGORY_LABELS } from '@/lib/utils/constants'
@@ -18,20 +18,20 @@ interface Resource {
 }
 
 const categoryColors: Record<string, string> = {
-  'helpline': 'bg-lavender-100 text-lavender-700',
-  'diagnosis': 'bg-healthblue-100 text-healthblue-700',
-  'respite': 'bg-teal-100 text-teal-700',
-  'support-group': 'bg-sage-100 text-sage-700',
-  'caregiver-education': 'bg-lavender-100 text-lavender-700',
-  'in-home-care': 'bg-cream-200 text-warmgray-700',
-  'long-term-care': 'bg-healthblue-100 text-healthblue-700',
-  'financial': 'bg-sage-100 text-sage-700',
-  'legal': 'bg-warmgray-100 text-warmgray-700',
+  'helpline': 'bg-warmgray-100 text-warmgray-800',
+  'diagnosis': 'bg-warmgray-100 text-warmgray-800',
+  'respite': 'bg-warmgray-100 text-warmgray-800',
+  'support-group': 'bg-warmgray-100 text-warmgray-800',
+  'caregiver-education': 'bg-warmgray-100 text-warmgray-800',
+  'in-home-care': 'bg-warmgray-100 text-warmgray-800',
+  'long-term-care': 'bg-warmgray-100 text-warmgray-800',
+  'financial': 'bg-warmgray-100 text-warmgray-800',
+  'legal': 'bg-warmgray-100 text-warmgray-800',
   'safety-emergency': 'bg-emergency-100 text-emergency-700',
-  'transportation': 'bg-amber-100 text-amber-700',
-  'brain-health': 'bg-teal-100 text-teal-700',
-  'research': 'bg-healthblue-100 text-healthblue-700',
-  'professional-training': 'bg-warmgray-100 text-warmgray-700',
+  'transportation': 'bg-warmgray-100 text-warmgray-800',
+  'brain-health': 'bg-warmgray-100 text-warmgray-800',
+  'research': 'bg-warmgray-100 text-warmgray-800',
+  'professional-training': 'bg-warmgray-100 text-warmgray-800',
 }
 
 export default function ResourceCard({ resource }: { resource: Resource }) {
@@ -41,7 +41,7 @@ export default function ResourceCard({ resource }: { resource: Resource }) {
   return (
     <div className="card-interactive group p-5 flex flex-col gap-3">
       <div className="flex items-start justify-between gap-3">
-        <h3 className="text-base font-bold text-warmgray-900 leading-snug group-hover:text-lavender-700 transition-colors">
+        <h3 className="text-base font-bold text-warmgray-900 leading-snug group-hover:text-warmgray-900 transition-colors">
           {resource.name}
         </h3>
         <span className={cn('badge shrink-0 mt-0.5', badgeColor)}>
@@ -73,7 +73,7 @@ export default function ResourceCard({ resource }: { resource: Resource }) {
       {/* Languages */}
       {resource.languages && resource.languages.includes('es') && (
         <div className="flex items-center gap-1.5">
-          <span className="badge bg-lavender-50 text-lavender-600 border border-lavender-200 text-xs">
+          <span className="badge bg-warmgray-50 text-warmgray-800 border border-warmgray-200 text-xs">
             🌐 Español disponible
           </span>
         </div>
@@ -84,7 +84,7 @@ export default function ResourceCard({ resource }: { resource: Resource }) {
         {resource.phone && (
           <a
             href={`tel:${resource.phone.replace(/\D/g, '')}`}
-            className="flex items-center gap-1.5 text-sm font-medium text-lavender-600 hover:text-lavender-800 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-lavender-500 rounded"
+            className="flex items-center gap-1.5 text-sm font-medium text-warmgray-800 hover:text-warmgray-900 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-warmgray-700 rounded"
             aria-label={`Call ${resource.name} at ${resource.phone}`}
           >
             <Phone className="w-3.5 h-3.5" aria-hidden />
@@ -96,7 +96,7 @@ export default function ResourceCard({ resource }: { resource: Resource }) {
             href={resource.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-1.5 text-sm font-medium text-lavender-600 hover:text-lavender-800 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-lavender-500 rounded"
+            className="flex items-center gap-1.5 text-sm font-medium text-warmgray-800 hover:text-warmgray-900 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-warmgray-700 rounded"
             aria-label={`Visit ${resource.name} website (opens in new tab)`}
           >
             <Globe className="w-3.5 h-3.5" aria-hidden />

@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import Link from 'next/link'
 import { FileDown, CheckSquare, MessageSquare, Pill, Eye, ArrowRight, Phone } from 'lucide-react'
 import Breadcrumbs from '@/components/ui/Breadcrumbs'
@@ -36,10 +36,10 @@ const toolkitItems = [
 ]
 
 const colorMap = {
-  lavender: 'bg-lavender-100 text-lavender-700',
-  teal: 'bg-teal-100 text-teal-700',
-  healthblue: 'bg-healthblue-100 text-healthblue-700',
-  sage: 'bg-sage-100 text-sage-700',
+  lavender: 'bg-warmgray-100 text-warmgray-800',
+  teal: 'bg-warmgray-100 text-warmgray-800',
+  healthblue: 'bg-warmgray-100 text-warmgray-800',
+  sage: 'bg-warmgray-100 text-warmgray-800',
 }
 
 export default function ToolkitPage() {
@@ -51,7 +51,7 @@ export default function ToolkitPage() {
       ]} />
 
       <div className="mb-10">
-        <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-lavender-100 text-lavender-700 rounded-full text-xs font-semibold mb-4">
+        <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-warmgray-100 text-warmgray-900 rounded-full text-xs font-semibold mb-4">
           <FileDown className="w-3 h-3" aria-hidden />
           Free Download
         </div>
@@ -83,22 +83,22 @@ export default function ToolkitPage() {
       </div>
 
       {/* Download CTA */}
-      <div className="p-6 rounded-2xl bg-lavender-600 text-white mb-8">
+      <div className="p-6 rounded-2xl bg-warmgray-800 text-white mb-8">
         <div className="flex items-start gap-4">
-          <div className="w-12 h-12 rounded-xl bg-lavender-500 flex items-center justify-center shrink-0">
+          <div className="w-12 h-12 rounded-xl bg-warmgray-700 flex items-center justify-center shrink-0">
             <FileDown className="w-6 h-6" aria-hidden />
           </div>
           <div className="flex-1">
             <h2 className="text-xl font-bold mb-2">Download the complete toolkit</h2>
-            <p className="text-lavender-200 text-sm mb-5 leading-relaxed">
+            <p className="text-warmgray-200 text-sm mb-5 leading-relaxed">
               All four documents in one PDF — print it at home or on any printer. No email required. Free.
             </p>
-            <p className="text-lavender-300 text-sm mb-4">
-              <strong className="text-lavender-100">Note:</strong> The downloadable PDF will be available once this site is fully set up. In the meantime, call the Alzheimer's Project to request a printed copy.
+            <p className="text-warmgray-300 text-sm mb-4">
+              <strong className="text-warmgray-100">Note:</strong> The downloadable PDF will be available once this site is fully set up. In the meantime, call the Alzheimer's Project to request a printed copy.
             </p>
             <div className="flex flex-wrap gap-3">
               <button
-                className="flex items-center gap-2 px-5 py-2.5 bg-white text-lavender-700 font-semibold rounded-xl hover:bg-lavender-50 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white text-sm"
+                className="flex items-center gap-2 px-5 py-2.5 bg-white text-warmgray-900 font-semibold rounded-xl hover:bg-warmgray-50 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white text-sm"
                 aria-label="Download toolkit PDF (coming soon)"
                 disabled
               >
@@ -107,7 +107,7 @@ export default function ToolkitPage() {
               </button>
               <a
                 href="tel:+18503862778"
-                className="flex items-center gap-2 px-5 py-2.5 bg-lavender-500 text-white font-semibold rounded-xl hover:bg-lavender-400 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white text-sm"
+                className="flex items-center gap-2 px-5 py-2.5 bg-warmgray-700 text-white font-semibold rounded-xl hover:bg-warmgray-400 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white text-sm"
               >
                 <Phone className="w-4 h-4" aria-hidden />
                 Request by phone
@@ -131,7 +131,7 @@ export default function ToolkitPage() {
 
       <div className="mt-8 flex items-center justify-between text-sm text-warmgray-400">
         <span>Developed in collaboration with Alzheimer's Project · TMH Memory Disorder Clinic</span>
-        <Link href="/signs-diagnosis/getting-evaluated" className="text-lavender-600 hover:text-lavender-700 transition-colors font-medium flex items-center gap-1">
+        <Link href="/signs-diagnosis/getting-evaluated" className="text-warmgray-800 hover:text-warmgray-900 transition-colors font-medium flex items-center gap-1">
           Next: Getting Evaluated <ArrowRight className="w-4 h-4" aria-hidden />
         </Link>
       </div>

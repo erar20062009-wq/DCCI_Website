@@ -1,4 +1,4 @@
-import SectionSidebar from '@/components/layout/SectionSidebar'
+﻿import SectionSidebar from '@/components/layout/SectionSidebar'
 import SectionHero from '@/components/layout/SectionHero'
 import { Home } from 'lucide-react'
 
@@ -20,8 +20,8 @@ export default function CareServicesLayout({ children }: { children: React.React
         label="Care Services"
         title="Find Care & Services"
         description="Respite, in-home help, long-term care, home safety, and transportation resources."
-        gradient="bg-gradient-to-b from-healthblue-50/70 to-white"
-        iconColor="text-healthblue-600"
+        gradient="bg-gradient-to-b from-warmgray-50/70 to-white"
+        iconColor="text-warmgray-700"
       />
       <div className="container-main py-12 md:py-16">
         <div className="flex gap-10">

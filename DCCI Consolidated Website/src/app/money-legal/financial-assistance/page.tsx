@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import { Phone } from 'lucide-react'
 import Breadcrumbs from '@/components/ui/Breadcrumbs'
 
@@ -17,9 +17,9 @@ const programs = [
 ]
 
 const colorMap: Record<string, string> = {
-  amber: 'bg-amber-100 text-amber-700', lavender: 'bg-lavender-100 text-lavender-700',
-  healthblue: 'bg-healthblue-100 text-healthblue-700', teal: 'bg-teal-100 text-teal-700',
-  sage: 'bg-sage-100 text-sage-700', warmgray: 'bg-warmgray-100 text-warmgray-700',
+  amber: 'bg-warmgray-100 text-warmgray-800', lavender: 'bg-warmgray-100 text-warmgray-800',
+  healthblue: 'bg-warmgray-100 text-warmgray-800', teal: 'bg-warmgray-100 text-warmgray-800',
+  sage: 'bg-warmgray-100 text-warmgray-800', warmgray: 'bg-warmgray-100 text-warmgray-800',
 }
 
 export default function FinancialAssistancePage() {
@@ -38,7 +38,7 @@ export default function FinancialAssistancePage() {
               <span className={`badge shrink-0 ${colorMap[p.color]}`}>{p.org}</span>
             </div>
             <p className="text-sm text-warmgray-500 leading-relaxed mb-3">{p.desc}</p>
-            <a href={`tel:${p.phone.replace(/\D/g,'')}`} className="flex items-center gap-1.5 text-sm font-medium text-lavender-600 hover:text-lavender-700 transition-colors">
+            <a href={`tel:${p.phone.replace(/\D/g,'')}`} className="flex items-center gap-1.5 text-sm font-medium text-warmgray-800 hover:text-warmgray-900 transition-colors">
               <Phone className="w-3.5 h-3.5" aria-hidden />{p.phone}
             </a>
           </div>

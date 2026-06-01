@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import Breadcrumbs from '@/components/ui/Breadcrumbs'
 
 export const metadata: Metadata = {
@@ -34,7 +34,7 @@ export default function TypesOfDementia() {
             <summary className="flex items-center justify-between gap-3 p-5 cursor-pointer list-none hover:bg-warmgray-50 transition-colors">
               <div className="flex items-center gap-3">
                 <h2 className="text-base font-bold text-warmgray-900">{type.name}</h2>
-                <span className="badge bg-lavender-100 text-lavender-700">{type.pct} of cases</span>
+                <span className="badge bg-warmgray-100 text-warmgray-900">{type.pct} of cases</span>
               </div>
               <span className="text-warmgray-400 transition-transform duration-200 group-open:rotate-180" aria-hidden>▾</span>
             </summary>
@@ -44,7 +44,7 @@ export default function TypesOfDementia() {
               <ul className="space-y-1" role="list">
                 {type.symptoms.map((s) => (
                   <li key={s} className="flex items-center gap-2 text-sm text-warmgray-600">
-                    <div className="w-1.5 h-1.5 rounded-full bg-lavender-400 shrink-0" aria-hidden />
+                    <div className="w-1.5 h-1.5 rounded-full bg-warmgray-400 shrink-0" aria-hidden />
                     {s}
                   </li>
                 ))}

@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import Link from 'next/link'
 import { MapPin, Clock, Phone, Calendar, Users } from 'lucide-react'
 import Breadcrumbs from '@/components/ui/Breadcrumbs'
@@ -40,7 +40,7 @@ export default function RespitePage() {
         <div className="space-y-3 mb-6">
           {socialClubs.map((club) => (
             <div key={club.day} className="flex gap-4 p-4 rounded-xl bg-white border border-warmgray-100 shadow-card">
-              <div className="w-20 text-sm font-bold text-lavender-700 shrink-0">{club.day}</div>
+              <div className="w-20 text-sm font-bold text-warmgray-900 shrink-0">{club.day}</div>
               <div className="space-y-1">
                 {club.locations.map((loc) => (
                   <div key={loc} className="flex items-center gap-2 text-sm text-warmgray-700">
@@ -53,9 +53,9 @@ export default function RespitePage() {
           ))}
         </div>
 
-        <div className="p-5 rounded-2xl bg-lavender-50 border border-lavender-200">
-          <h3 className="text-sm font-bold text-lavender-900 mb-2">How to get started</h3>
-          <ol className="space-y-2 text-sm text-lavender-800 list-decimal list-inside">
+        <div className="p-5 rounded-2xl bg-warmgray-50 border border-warmgray-200">
+          <h3 className="text-sm font-bold text-warmgray-900 mb-2">How to get started</h3>
+          <ol className="space-y-2 text-sm text-warmgray-900 list-decimal list-inside">
             <li>Call <a href="tel:+18503862778" className="font-semibold underline">(850) 386-2778</a> to express interest.</li>
             <li>A Florida Elder Affairs assessment with a case manager (~45 min) is required.</li>
             <li>A Respite Care Assessment covering stage, mobility, behavior, and medical needs is completed.</li>
@@ -71,7 +71,7 @@ export default function RespitePage() {
           <div className="card-base p-5">
             <h3 className="text-base font-bold text-warmgray-900 mb-1">AmeriCorps / Legacy Corps for Veterans & Military Families</h3>
             <p className="text-sm text-warmgray-500 mb-3">Trained volunteers matched to veteran families for in-home companionship-based respite. No cost. Volunteers understand military culture. <strong>Note:</strong> companion care only — not personal care or medication assistance.</p>
-            <a href="tel:+18503862778" className="flex items-center gap-1.5 text-sm font-medium text-lavender-600 hover:text-lavender-700 transition-colors">
+            <a href="tel:+18503862778" className="flex items-center gap-1.5 text-sm font-medium text-warmgray-800 hover:text-warmgray-900 transition-colors">
               <Phone className="w-3.5 h-3.5" aria-hidden /> (850) 386-2778 — Alzheimer's Project
             </a>
           </div>
@@ -79,7 +79,7 @@ export default function RespitePage() {
           <div className="card-base p-5">
             <h3 className="text-base font-bold text-warmgray-900 mb-1">ADI In-Home Respite (Florida DOEA)</h3>
             <p className="text-sm text-warmgray-500 mb-3">For individuals 18+ with a probable ADRD diagnosis: in-home, facility-based, emergency, and extended care up to 30 days. Delivered through Advantage Aging Solutions.</p>
-            <a href="tel:+18664674624" className="flex items-center gap-1.5 text-sm font-medium text-lavender-600 hover:text-lavender-700 transition-colors">
+            <a href="tel:+18664674624" className="flex items-center gap-1.5 text-sm font-medium text-warmgray-800 hover:text-warmgray-900 transition-colors">
               <Phone className="w-3.5 h-3.5" aria-hidden /> 866-467-4624 — Elder Helpline
             </a>
           </div>
@@ -87,7 +87,7 @@ export default function RespitePage() {
           <div className="card-base p-5">
             <h3 className="text-base font-bold text-warmgray-900 mb-1">Emergency Respite</h3>
             <p className="text-sm text-warmgray-500 mb-3">Short-notice respite in crisis situations — when a caregiver is hospitalized, has a family emergency, or is otherwise unable to provide care. Contact the Elder Helpline immediately.</p>
-            <a href="tel:+18009635337" className="flex items-center gap-1.5 text-sm font-medium text-lavender-600 hover:text-lavender-700 transition-colors">
+            <a href="tel:+18009635337" className="flex items-center gap-1.5 text-sm font-medium text-warmgray-800 hover:text-warmgray-900 transition-colors">
               <Phone className="w-3.5 h-3.5" aria-hidden /> 1-800-963-5337 — Elder Helpline (24/7)
             </a>
           </div>

@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Inter, Playfair_Display } from 'next/font/google'
 import '../styles/globals.css'
 import HelpBar from '@/components/layout/HelpBar'
 import Header from '@/components/layout/Header'
@@ -13,6 +13,12 @@ import { SITE_NAME, SITE_DESCRIPTION } from '@/lib/utils/constants'
 const inter = Inter({
   subsets: ['latin'],
   variable: '--font-inter',
+  display: 'swap',
+})
+
+const display = Playfair_Display({
+  subsets: ['latin'],
+  variable: '--font-display',
   display: 'swap',
 })
 
@@ -38,7 +44,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={inter.variable}>
+    <html lang="en" className={`${inter.variable} ${display.variable}`}>
       <body>
         <a href="#main-content" className="skip-link">
           Skip to main content

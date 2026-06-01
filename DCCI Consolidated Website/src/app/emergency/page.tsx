@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import Link from 'next/link'
 import { Phone, AlertTriangle, ShieldAlert, Navigation, MessageSquare } from 'lucide-react'
 import EmergencyCallout from '@/components/content/EmergencyCallout'
@@ -52,9 +52,9 @@ const sections = [
 
 const colorMap: Record<string, { bg: string; border: string; icon: string; heading: string }> = {
   emergency: { bg: 'bg-emergency-50', border: 'border-emergency-200', icon: 'text-emergency-600', heading: 'text-emergency-900' },
-  amber: { bg: 'bg-amber-50', border: 'border-amber-200', icon: 'text-amber-600', heading: 'text-amber-900' },
-  lavender: { bg: 'bg-lavender-50', border: 'border-lavender-200', icon: 'text-lavender-600', heading: 'text-lavender-900' },
-  healthblue: { bg: 'bg-healthblue-50', border: 'border-healthblue-200', icon: 'text-healthblue-600', heading: 'text-healthblue-900' },
+  amber: { bg: 'bg-warmgray-50', border: 'border-warmgray-200', icon: 'text-warmgray-800', heading: 'text-warmgray-900' },
+  lavender: { bg: 'bg-warmgray-50', border: 'border-warmgray-200', icon: 'text-warmgray-800', heading: 'text-warmgray-900' },
+  healthblue: { bg: 'bg-warmgray-50', border: 'border-warmgray-200', icon: 'text-warmgray-800', heading: 'text-warmgray-900' },
 }
 
 export default function EmergencyPage() {
@@ -127,7 +127,7 @@ export default function EmergencyPage() {
         </section>
 
         <div className="mt-10 text-center">
-          <Link href="/" className="text-sm text-lavender-600 hover:text-lavender-700 font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-lavender-500 rounded">
+          <Link href="/" className="text-sm text-warmgray-800 hover:text-warmgray-900 font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-warmgray-700 rounded">
             ← Back to home
           </Link>
         </div>

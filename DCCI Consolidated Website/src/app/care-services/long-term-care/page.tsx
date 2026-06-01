@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import { Phone, ExternalLink } from 'lucide-react'
 import Breadcrumbs from '@/components/ui/Breadcrumbs'
 
@@ -35,10 +35,10 @@ const programs = [
 ]
 
 const colorMap: Record<string, string> = {
-  lavender: 'bg-lavender-100 text-lavender-700 border-lavender-200',
-  teal: 'bg-teal-100 text-teal-700 border-teal-200',
-  healthblue: 'bg-healthblue-100 text-healthblue-700 border-healthblue-200',
-  sage: 'bg-sage-100 text-sage-700 border-sage-200',
+  lavender: 'bg-warmgray-100 text-warmgray-900 border-warmgray-200',
+  teal: 'bg-warmgray-100 text-warmgray-800 border-warmgray-200',
+  healthblue: 'bg-warmgray-100 text-warmgray-800 border-warmgray-200',
+  sage: 'bg-warmgray-100 text-warmgray-800 border-warmgray-200',
 }
 
 export default function LongTermCarePage() {
@@ -62,7 +62,7 @@ export default function LongTermCarePage() {
               <h2 className={`text-base font-bold mb-2 ${text}`}>{p.name}</h2>
               <p className="text-sm text-warmgray-700 leading-relaxed mb-3">{p.desc}</p>
               <a href={`tel:${p.phone.replace(/\D/g,'')}`}
-                className="flex items-center gap-1.5 text-sm font-medium text-lavender-700 hover:text-lavender-900 transition-colors">
+                className="flex items-center gap-1.5 text-sm font-medium text-warmgray-900 hover:text-warmgray-900 transition-colors">
                 <Phone className="w-3.5 h-3.5" aria-hidden />
                 {p.phone} — Elder Helpline
               </a>
@@ -76,7 +76,7 @@ export default function LongTermCarePage() {
           <strong>Not sure where to start?</strong> The Florida Long-Term Care Ombudsman Program advocates for residents of nursing homes, ALFs, and adult family care homes. They can help you understand a loved one's rights and navigate facility options.
         </p>
         <a href="https://elderaffairs.org" target="_blank" rel="noopener noreferrer"
-          className="flex items-center gap-1.5 text-sm font-medium text-lavender-600 hover:text-lavender-700 transition-colors">
+          className="flex items-center gap-1.5 text-sm font-medium text-warmgray-800 hover:text-warmgray-900 transition-colors">
           Florida Dept. of Elder Affairs — Long-Term Care <ExternalLink className="w-3.5 h-3.5" aria-hidden />
         </a>
       </div>

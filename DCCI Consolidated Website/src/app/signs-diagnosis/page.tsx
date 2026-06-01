@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import Link from 'next/link'
 import { ArrowRight, Search, FileDown, Phone, AlertCircle } from 'lucide-react'
 import Breadcrumbs from '@/components/ui/Breadcrumbs'
@@ -11,14 +11,8 @@ export const metadata: Metadata = {
 const subPages = [
   {
     href: '/signs-diagnosis/warning-signs',
-    title: 'Warning Signs vs. Normal Aging',
-    description: 'A clear two-column comparison of what\'s a normal part of aging and what may be a warning sign worth discussing with a doctor.',
-    icon: Search,
-  },
-  {
-    href: '/signs-diagnosis/10-signs',
-    title: 'The 10 Early Signs of Dementia',
-    description: 'Plain-language guide to the 10 warning signs recognized by the Alzheimer\'s Association and local experts.',
+    title: '10 Early Signs & Warning Sign Guide',
+    description: 'All 10 dementia warning sign domains explained, each paired with a side-by-side comparison of normal aging vs. what to watch for.',
     icon: AlertCircle,
   },
   {
@@ -52,14 +46,14 @@ export default function SignsDiagnosisPage() {
   return (
     <article>
 
-      <div className="p-5 rounded-2xl bg-lavender-50 border border-lavender-200 mb-10">
+      <div className="p-5 rounded-2xl bg-warmgray-50 border border-warmgray-200 mb-10">
         <div className="flex items-start gap-3">
-          <Phone className="w-5 h-5 text-lavender-600 shrink-0 mt-0.5" aria-hidden />
+          <Phone className="w-5 h-5 text-warmgray-800 shrink-0 mt-0.5" aria-hidden />
           <div>
-            <p className="text-sm font-semibold text-lavender-900 mb-0.5">Not sure where to start? Call the helpline.</p>
-            <p className="text-sm text-lavender-700">
+            <p className="text-sm font-semibold text-warmgray-900 mb-0.5">Not sure where to start? Call the helpline.</p>
+            <p className="text-sm text-warmgray-900">
               The <strong>Alzheimer's Project Helpline</strong> is free and available Mon–Fri, 9am–5pm.{' '}
-              <a href="tel:+18503862778" className="font-semibold underline hover:text-lavender-900 transition-colors">(850) 386-2778</a>
+              <a href="tel:+18503862778" className="font-semibold underline hover:text-warmgray-900 transition-colors">(850) 386-2778</a>
             </p>
           </div>
         </div>
@@ -72,23 +66,23 @@ export default function SignsDiagnosisPage() {
             <Link
               key={page.href}
               href={page.href}
-              className={`group flex flex-col gap-3 p-5 rounded-2xl border-2 transition-all duration-200 hover:shadow-card-hover hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-lavender-500 focus-visible:ring-offset-2 ${
+              className={`group flex flex-col gap-3 p-5 rounded-2xl border-2 transition-all duration-200 hover:shadow-card-hover hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-warmgray-700 focus-visible:ring-offset-2 ${
                 page.featured
-                  ? 'border-lavender-300 bg-lavender-50 hover:border-lavender-400'
-                  : 'border-warmgray-100 bg-white shadow-card hover:border-lavender-200'
+                  ? 'border-warmgray-300 bg-warmgray-50 hover:border-warmgray-400'
+                  : 'border-warmgray-100 bg-white shadow-card hover:border-warmgray-200'
               }`}
             >
-              <div className={`flex items-center gap-2 ${page.featured ? 'text-lavender-700' : 'text-warmgray-700'}`}>
+              <div className={`flex items-center gap-2 ${page.featured ? 'text-warmgray-900' : 'text-warmgray-700'}`}>
                 <Icon className="w-4 h-4" aria-hidden />
                 {page.featured && (
-                  <span className="text-xs font-semibold bg-lavender-200 text-lavender-800 px-2 py-0.5 rounded-full">
+                  <span className="text-xs font-semibold bg-warmgray-200 text-warmgray-900 px-2 py-0.5 rounded-full">
                     Most popular
                   </span>
                 )}
               </div>
               <div>
-                <h2 className={`text-base font-bold mb-1.5 group-hover:text-lavender-700 transition-colors ${
-                  page.featured ? 'text-lavender-900' : 'text-warmgray-900'
+                <h2 className={`text-base font-bold mb-1.5 group-hover:text-warmgray-900 transition-colors ${
+                  page.featured ? 'text-warmgray-900' : 'text-warmgray-900'
                 }`}>
                   {page.title}
                 </h2>
@@ -96,7 +90,7 @@ export default function SignsDiagnosisPage() {
                   {page.description}
                 </p>
               </div>
-              <div className="mt-auto flex items-center gap-1.5 text-sm font-medium text-lavender-600 group-hover:gap-2.5 transition-all duration-150">
+              <div className="mt-auto flex items-center gap-1.5 text-sm font-medium text-warmgray-800 group-hover:gap-2.5 transition-all duration-150">
                 Open <ArrowRight className="w-3.5 h-3.5" aria-hidden />
               </div>
             </Link>

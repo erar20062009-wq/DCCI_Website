@@ -14,8 +14,7 @@ export const NAV_LINKS = [
     description: 'Warning signs, diagnosis, and your free doctor-visit toolkit',
     color: 'lavender',
     children: [
-      { label: 'Warning Signs & Normal Aging', href: '/signs-diagnosis/warning-signs', description: 'What to watch for and when to act' },
-      { label: 'The 10 Early Signs', href: '/signs-diagnosis/10-signs', description: 'Plain-language guide to dementia symptoms' },
+      { label: '10 Early Signs & Warning Guide', href: '/signs-diagnosis/warning-signs', description: 'The 10 domains explained with normal vs. warning sign comparisons' },
       { label: 'Types of Dementia', href: '/signs-diagnosis/types-of-dementia', description: "Alzheimer's, vascular, Lewy body, and more" },
       { label: 'Disease Stages', href: '/signs-diagnosis/disease-stages', description: 'What to expect at each stage' },
       { label: 'Getting Evaluated', href: '/signs-diagnosis/getting-evaluated', description: 'Memory clinics, referrals, and first visits' },

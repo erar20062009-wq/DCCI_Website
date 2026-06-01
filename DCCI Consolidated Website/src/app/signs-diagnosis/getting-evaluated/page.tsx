@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import Link from 'next/link'
 import { Phone, MapPin, Clock, CheckCircle, ArrowRight } from 'lucide-react'
 import Breadcrumbs from '@/components/ui/Breadcrumbs'
@@ -39,23 +39,23 @@ export default function GettingEvaluated() {
       </p>
 
       {/* TMH MDC highlight */}
-      <div className="p-5 rounded-2xl bg-healthblue-50 border border-healthblue-200 mb-10">
-        <h2 className="text-base font-bold text-healthblue-900 mb-3">TMH Memory Disorder Clinic</h2>
-        <p className="text-sm text-healthblue-700 mb-4">
+      <div className="p-5 rounded-2xl bg-warmgray-50 border border-warmgray-200 mb-10">
+        <h2 className="text-base font-bold text-warmgray-900 mb-3">TMH Memory Disorder Clinic</h2>
+        <p className="text-sm text-warmgray-800 mb-4">
           One of only 17 state-designated Memory Disorder Clinics in Florida, funded by DOEA under the Alzheimer's Disease Initiative. Services include neurological evaluation, neuropsychological testing, medication review, psychosocial assessment, and referral to community partners.
         </p>
         <div className="space-y-2 text-sm mb-4">
-          <div className="flex items-center gap-2 text-healthblue-700">
+          <div className="flex items-center gap-2 text-warmgray-800">
             <Phone className="w-4 h-4 shrink-0" aria-hidden />
-            <a href="tel:+18504315001" className="font-semibold hover:text-healthblue-900 transition-colors">(850) 431-5001</a>
-            <span className="text-healthblue-500">· Social work: option 7</span>
+            <a href="tel:+18504315001" className="font-semibold hover:text-warmgray-900 transition-colors">(850) 431-5001</a>
+            <span className="text-warmgray-600">· Social work: option 7</span>
           </div>
-          <div className="flex items-center gap-2 text-healthblue-700">
+          <div className="flex items-center gap-2 text-warmgray-800">
             <MapPin className="w-4 h-4 shrink-0" aria-hidden />
             1300 Miccosukee Rd, Tallahassee, FL 32308
           </div>
         </div>
-        <p className="text-xs text-healthblue-600">
+        <p className="text-xs text-warmgray-700">
           <strong>Self-referral accepted.</strong> You do not need a doctor's referral to contact the clinic, but records are needed to schedule.
         </p>
       </div>
@@ -67,7 +67,7 @@ export default function GettingEvaluated() {
         <ul className="space-y-2" role="list">
           {warningSymptoms.map((s) => (
             <li key={s} className="flex items-center gap-2.5 text-sm text-warmgray-700">
-              <CheckCircle className="w-4 h-4 text-sage-500 shrink-0" aria-hidden />
+              <CheckCircle className="w-4 h-4 text-warmgray-600 shrink-0" aria-hidden />
               {s}
             </li>
           ))}
@@ -80,7 +80,7 @@ export default function GettingEvaluated() {
         <div className="space-y-4">
           {steps.map((step, i) => (
             <div key={step.title} className="flex gap-4">
-              <div className="w-8 h-8 rounded-full bg-lavender-100 text-lavender-700 text-sm font-bold flex items-center justify-center shrink-0">
+              <div className="w-8 h-8 rounded-full bg-warmgray-100 text-warmgray-900 text-sm font-bold flex items-center justify-center shrink-0">
                 {i + 1}
               </div>
               <div>
@@ -92,9 +92,9 @@ export default function GettingEvaluated() {
         </div>
       </section>
 
-      <div className="p-5 rounded-2xl bg-lavender-50 border border-lavender-200">
-        <p className="text-sm font-semibold text-lavender-900 mb-2">Ready for the first appointment?</p>
-        <p className="text-sm text-lavender-700 mb-4">Download the free doctor-visit toolkit to prepare for the evaluation.</p>
+      <div className="p-5 rounded-2xl bg-warmgray-50 border border-warmgray-200">
+        <p className="text-sm font-semibold text-warmgray-900 mb-2">Ready for the first appointment?</p>
+        <p className="text-sm text-warmgray-900 mb-4">Download the free doctor-visit toolkit to prepare for the evaluation.</p>
         <Link href="/signs-diagnosis/toolkit" className="btn-primary text-sm">
           <ArrowRight className="w-4 h-4" aria-hidden /> Get the free toolkit
         </Link>

@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import Link from 'next/link'
 import { BookOpen, Users, Phone, ExternalLink, ArrowRight } from 'lucide-react'
 import Breadcrumbs from '@/components/ui/Breadcrumbs'
@@ -30,7 +30,7 @@ const courses: Course[] = [
       { name: 'Big Bend AHEC', phone: '(850) 224-1177', url: 'https://bigbendahec.org' },
     ],
     badge: 'Evidence-Based',
-    badgeColor: 'bg-lavender-100 text-lavender-700',
+    badgeColor: 'bg-warmgray-100 text-warmgray-800',
   },
   {
     name: 'ACTS 2 — African-American Alzheimer\'s Caregiver Training & Support',
@@ -42,7 +42,7 @@ const courses: Course[] = [
       { name: 'FSU REACH', url: 'https://reach.med.fsu.edu' },
     ],
     badge: 'Faith-Based',
-    badgeColor: 'bg-sage-100 text-sage-700',
+    badgeColor: 'bg-warmgray-100 text-warmgray-800',
   },
   {
     name: 'Caregiver Community Workshops',
@@ -53,7 +53,7 @@ const courses: Course[] = [
       { name: "Alzheimer's Project", phone: '(850) 386-2778', url: 'https://alzheimersproject.org' },
     ],
     badge: 'Community',
-    badgeColor: 'bg-teal-100 text-teal-700',
+    badgeColor: 'bg-warmgray-100 text-warmgray-800',
   },
   {
     name: 'FSU College of Medicine Annual Conference',
@@ -64,7 +64,7 @@ const courses: Course[] = [
       { name: "Alzheimer's Project + FSU College of Medicine", url: 'https://alzheimersproject.org' },
     ],
     badge: 'Annual',
-    badgeColor: 'bg-healthblue-100 text-healthblue-700',
+    badgeColor: 'bg-warmgray-100 text-warmgray-800',
   },
 ]
 
@@ -100,7 +100,7 @@ export default function ClassesPage() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-1.5">
                   {course.weeks.map((week) => (
                     <div key={week} className="flex items-start gap-2 text-sm text-warmgray-600">
-                      <div className="w-1.5 h-1.5 rounded-full bg-lavender-400 shrink-0 mt-1.5" aria-hidden />
+                      <div className="w-1.5 h-1.5 rounded-full bg-warmgray-400 shrink-0 mt-1.5" aria-hidden />
                       {week}
                     </div>
                   ))}
@@ -115,14 +115,14 @@ export default function ClassesPage() {
                   <div key={p.name} className="flex items-center gap-2 text-sm">
                     {p.url ? (
                       <a href={p.url} target="_blank" rel="noopener noreferrer"
-                        className="font-medium text-lavender-600 hover:text-lavender-800 transition-colors flex items-center gap-1">
+                        className="font-medium text-warmgray-800 hover:text-warmgray-900 transition-colors flex items-center gap-1">
                         {p.name} <ExternalLink className="w-3 h-3" aria-hidden />
                       </a>
                     ) : (
                       <span className="font-medium text-warmgray-700">{p.name}</span>
                     )}
                     {p.phone && (
-                      <a href={`tel:${p.phone.replace(/\D/g,'')}`} className="text-warmgray-500 hover:text-lavender-600 transition-colors">
+                      <a href={`tel:${p.phone.replace(/\D/g,'')}`} className="text-warmgray-500 hover:text-warmgray-800 transition-colors">
                         {p.phone}
                       </a>
                     )}
@@ -135,15 +135,15 @@ export default function ClassesPage() {
         ))}
       </div>
 
-      <div className="p-5 rounded-2xl bg-lavender-50 border border-lavender-200">
+      <div className="p-5 rounded-2xl bg-warmgray-50 border border-warmgray-200">
         <div className="flex items-start gap-3">
-          <BookOpen className="w-5 h-5 text-lavender-600 shrink-0 mt-0.5" aria-hidden />
+          <BookOpen className="w-5 h-5 text-warmgray-800 shrink-0 mt-0.5" aria-hidden />
           <div>
-            <p className="text-sm font-semibold text-lavender-900 mb-1">Not sure which program is right for you?</p>
-            <p className="text-sm text-lavender-700 mb-3">
-              Call the Alzheimer's Project at <a href="tel:+18503862778" className="font-semibold underline hover:text-lavender-900">(850) 386-2778</a> — they can help match you to the right program and let you know the next available session.
+            <p className="text-sm font-semibold text-warmgray-900 mb-1">Not sure which program is right for you?</p>
+            <p className="text-sm text-warmgray-900 mb-3">
+              Call the Alzheimer's Project at <a href="tel:+18503862778" className="font-semibold underline hover:text-warmgray-900">(850) 386-2778</a> — they can help match you to the right program and let you know the next available session.
             </p>
-            <Link href="/events" className="text-sm font-medium text-lavender-700 hover:text-lavender-900 transition-colors flex items-center gap-1">
+            <Link href="/events" className="text-sm font-medium text-warmgray-900 hover:text-warmgray-900 transition-colors flex items-center gap-1">
               See upcoming class dates <ArrowRight className="w-3.5 h-3.5" aria-hidden />
             </Link>
           </div>

@@ -1,7 +1,8 @@
-'use client'
+﻿'use client'
 
 import Link from 'next/link'
-import { Search, Menu, Brain } from 'lucide-react'
+import { Search, Menu } from 'lucide-react'
+import BrainIcon from '@/components/ui/BrainIcon'
 import { cn } from '@/lib/utils/cn'
 import { useScrollHeader } from '@/lib/hooks/useScrollHeader'
 import { useMenuStore } from '@/store/menuStore'
@@ -29,21 +30,21 @@ export default function Header() {
         {/* Logo */}
         <Link
           href="/"
-          className="flex items-center gap-3 shrink-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-lavender-500 rounded-lg group"
+          className="flex items-center gap-3 shrink-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-warmgray-700 rounded-lg group"
           aria-label="Big Bend Brain Health — Home"
         >
-          <div className="relative w-9 h-9 rounded-xl bg-gradient-to-br from-lavender-400 to-lavender-700 flex items-center justify-center shadow-sm group-hover:shadow-md transition-shadow">
-            <Brain className="w-5 h-5 text-white" aria-hidden />
+          <div className="relative w-9 h-9 rounded-xl bg-gradient-to-br from-warmgray-400 to-warmgray-900 flex items-center justify-center shadow-sm group-hover:shadow-md transition-shadow">
+            <BrainIcon className="w-5 h-5 text-white" />
           </div>
           <div className="hidden sm:block leading-tight">
-            <div className="text-sm font-bold text-warmgray-900 group-hover:text-lavender-700 transition-colors">
+            <div className="text-sm font-bold text-warmgray-900 group-hover:text-warmgray-900 transition-colors">
               Big Bend Brain Health
             </div>
             <div className="text-[11px] text-warmgray-500 font-medium">
               Memory Care Resources
             </div>
           </div>
-          <div className="sm:hidden text-sm font-bold text-warmgray-900 group-hover:text-lavender-700 transition-colors">
+          <div className="sm:hidden text-sm font-bold text-warmgray-900 group-hover:text-warmgray-900 transition-colors">
             BBBH
           </div>
         </Link>
@@ -60,7 +61,7 @@ export default function Header() {
             className={cn(
               'p-2 rounded-lg text-warmgray-500 hover:bg-warmgray-100 hover:text-warmgray-900',
               'transition-all duration-150',
-              'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-lavender-500'
+              'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-warmgray-700'
             )}
             aria-label="Open search (Ctrl+K)"
           >
@@ -72,7 +73,7 @@ export default function Header() {
             className={cn(
               'lg:hidden p-2 rounded-lg text-warmgray-500 hover:bg-warmgray-100 hover:text-warmgray-900',
               'transition-all duration-150',
-              'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-lavender-500'
+              'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-warmgray-700'
             )}
             aria-label="Open navigation menu"
             aria-expanded={false}

@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import { Shield, ExternalLink } from 'lucide-react'
 import Breadcrumbs from '@/components/ui/Breadcrumbs'
 
@@ -71,11 +71,11 @@ const categories = [
 ]
 
 const colorMap: Record<string, { badge: string; dot: string }> = {
-  amber: { badge: 'bg-amber-100 text-amber-700', dot: 'bg-amber-500' },
-  teal: { badge: 'bg-teal-100 text-teal-700', dot: 'bg-teal-500' },
+  amber: { badge: 'bg-warmgray-100 text-warmgray-800', dot: 'bg-warmgray-600' },
+  teal: { badge: 'bg-warmgray-100 text-warmgray-800', dot: 'bg-warmgray-600' },
   emergency: { badge: 'bg-emergency-100 text-emergency-700', dot: 'bg-emergency-500' },
-  lavender: { badge: 'bg-lavender-100 text-lavender-700', dot: 'bg-lavender-500' },
-  healthblue: { badge: 'bg-healthblue-100 text-healthblue-700', dot: 'bg-healthblue-500' },
+  lavender: { badge: 'bg-warmgray-100 text-warmgray-800', dot: 'bg-warmgray-600' },
+  healthblue: { badge: 'bg-warmgray-100 text-warmgray-800', dot: 'bg-warmgray-600' },
 }
 
 export default function HomeSafetyPage() {
@@ -120,13 +120,13 @@ export default function HomeSafetyPage() {
         })}
       </div>
 
-      <div className="p-5 rounded-2xl bg-lavender-50 border border-lavender-200">
-        <p className="text-sm font-semibold text-lavender-900 mb-2">Free home safety videos</p>
-        <p className="text-sm text-lavender-700 mb-3">
+      <div className="p-5 rounded-2xl bg-warmgray-50 border border-warmgray-200">
+        <p className="text-sm font-semibold text-warmgray-900 mb-2">Free home safety videos</p>
+        <p className="text-sm text-warmgray-900 mb-3">
           The Alzheimer's Project has a full video library covering Home Safety, Fire Safety, Kitchen Safety, Falls, and Safe Sitting — all free on their website.
         </p>
         <a href="https://alzheimersproject.org" target="_blank" rel="noopener noreferrer"
-          className="text-sm font-medium text-lavender-700 hover:text-lavender-900 transition-colors flex items-center gap-1">
+          className="text-sm font-medium text-warmgray-900 hover:text-warmgray-900 transition-colors flex items-center gap-1">
           Watch the video library <ExternalLink className="w-3.5 h-3.5" aria-hidden />
         </a>
       </div>

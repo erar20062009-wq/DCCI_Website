@@ -1,4 +1,4 @@
-'use client'
+﻿'use client'
 
 import { useState, useMemo } from 'react'
 import Link from 'next/link'
@@ -36,7 +36,7 @@ export default function DirectoryClient({ initialResources }: Props) {
 
   return (
     <div className="pt-header">
-      <div className="bg-gradient-to-b from-lavender-50 to-white border-b border-warmgray-100 py-10">
+      <div className="bg-gradient-to-b from-warmgray-50 to-white border-b border-warmgray-100 py-10">
         <div className="container-main">
           <h1 className="text-3xl font-bold text-warmgray-900 mb-2">Resource Directory</h1>
           <p className="text-warmgray-500 mb-6 max-w-xl">
@@ -87,7 +87,7 @@ export default function DirectoryClient({ initialResources }: Props) {
                 type="checkbox"
                 checked={spanishOnly}
                 onChange={(e) => setSpanishOnly(e.target.checked)}
-                className="w-4 h-4 rounded border-warmgray-300 text-lavender-600 focus:ring-lavender-500"
+                className="w-4 h-4 rounded border-warmgray-300 text-warmgray-800 focus:ring-warmgray-700"
               />
               <span className="text-sm text-warmgray-700">Spanish available</span>
             </label>
@@ -106,7 +106,7 @@ export default function DirectoryClient({ initialResources }: Props) {
           {hasFilters && (
             <button
               onClick={clearFilters}
-              className="flex items-center gap-1.5 text-sm font-medium text-lavender-600 hover:text-lavender-700 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-lavender-500 rounded"
+              className="flex items-center gap-1.5 text-sm font-medium text-warmgray-800 hover:text-warmgray-900 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-warmgray-700 rounded"
             >
               <X className="w-3.5 h-3.5" aria-hidden />
               Clear filters

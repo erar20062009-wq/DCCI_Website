@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import Link from 'next/link'
 import { MessageCircle, FileDown, ArrowRight } from 'lucide-react'
 import Breadcrumbs from '@/components/ui/Breadcrumbs'
@@ -66,7 +66,7 @@ export default function TalkingToYourDoctorPage() {
         <div className="space-y-3">
           {tips.map((tip, i) => (
             <div key={tip.heading} className="flex gap-4 p-4 rounded-xl bg-white border border-warmgray-100 shadow-card">
-              <div className="w-8 h-8 rounded-full bg-lavender-100 text-lavender-700 text-sm font-bold flex items-center justify-center shrink-0">
+              <div className="w-8 h-8 rounded-full bg-warmgray-100 text-warmgray-900 text-sm font-bold flex items-center justify-center shrink-0">
                 {i + 1}
               </div>
               <div>
@@ -81,11 +81,11 @@ export default function TalkingToYourDoctorPage() {
       {/* Questions to ask */}
       <section className="mb-10" aria-labelledby="questions-heading">
         <h2 id="questions-heading" className="text-xl font-bold text-warmgray-900 mb-4">Questions to ask your doctor</h2>
-        <div className="p-5 rounded-2xl bg-lavender-50 border border-lavender-200">
+        <div className="p-5 rounded-2xl bg-warmgray-50 border border-warmgray-200">
           <ul className="space-y-2" role="list">
             {questions.map((q) => (
-              <li key={q} className="flex items-start gap-2.5 text-sm text-lavender-900">
-                <MessageCircle className="w-4 h-4 text-lavender-500 shrink-0 mt-0.5" aria-hidden />
+              <li key={q} className="flex items-start gap-2.5 text-sm text-warmgray-900">
+                <MessageCircle className="w-4 h-4 text-warmgray-700 shrink-0 mt-0.5" aria-hidden />
                 {q}
               </li>
             ))}
@@ -99,7 +99,7 @@ export default function TalkingToYourDoctorPage() {
           <strong>FSU REACH</strong> offers a free guide: <em>"How To Talk With Your Healthcare Provider"</em> — practical tips on communicating with providers to get the care you want.
         </p>
         <a href="https://reach.med.fsu.edu" target="_blank" rel="noopener noreferrer"
-          className="text-sm font-medium text-lavender-600 hover:text-lavender-700 transition-colors flex items-center gap-1">
+          className="text-sm font-medium text-warmgray-800 hover:text-warmgray-900 transition-colors flex items-center gap-1">
           View FSU REACH resources →
         </a>
       </div>

@@ -1,4 +1,4 @@
-'use client'
+﻿'use client'
 
 import { useState } from 'react'
 import { Mail, CheckCircle, Loader2 } from 'lucide-react'
@@ -19,9 +19,9 @@ export default function NewsletterSignup() {
 
   if (status === 'success') {
     return (
-      <div className="flex items-center gap-3 p-4 rounded-xl bg-sage-50 border border-sage-200">
-        <CheckCircle className="w-5 h-5 text-sage-600 shrink-0" aria-hidden />
-        <p className="text-sm font-medium text-sage-800">You're signed up! We'll send resource updates and local event reminders.</p>
+      <div className="flex items-center gap-3 p-4 rounded-xl bg-warmgray-50 border border-warmgray-200">
+        <CheckCircle className="w-5 h-5 text-warmgray-700 shrink-0" aria-hidden />
+        <p className="text-sm font-medium text-warmgray-900">You're signed up! We'll send resource updates and local event reminders.</p>
       </div>
     )
   }

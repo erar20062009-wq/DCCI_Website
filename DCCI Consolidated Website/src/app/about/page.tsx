@@ -1,6 +1,7 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import Link from 'next/link'
-import { Brain, ExternalLink, Mail, Phone } from 'lucide-react'
+import { ExternalLink, Mail, Phone } from 'lucide-react'
+import BrainIcon from '@/components/ui/BrainIcon'
 
 export const metadata: Metadata = {
   title: 'About',
@@ -20,11 +21,11 @@ const partners = [
 export default function AboutPage() {
   return (
     <div className="pt-header">
-      <div className="bg-gradient-to-b from-lavender-50 to-white border-b border-warmgray-100 py-12">
+      <div className="bg-gradient-to-b from-warmgray-50 to-white border-b border-warmgray-100 py-12">
         <div className="container-narrow">
           <div className="flex items-center gap-4 mb-6">
-            <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-lavender-400 to-lavender-700 flex items-center justify-center">
-              <Brain className="w-7 h-7 text-white" aria-hidden />
+            <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-warmgray-400 to-warmgray-900 flex items-center justify-center">
+              <BrainIcon className="w-7 h-7 text-white" />
             </div>
             <div>
               <h1 className="text-3xl font-bold text-warmgray-900">About This Site</h1>
@@ -57,26 +58,26 @@ export default function AboutPage() {
           <div className="space-y-4">
             {partners.map((org) => (
               <div key={org.name} className="card-base p-5 flex gap-4">
-                <div className="w-10 h-10 rounded-xl bg-lavender-100 flex items-center justify-center shrink-0 text-xs font-bold text-lavender-700">
+                <div className="w-10 h-10 rounded-xl bg-warmgray-100 flex items-center justify-center shrink-0 text-xs font-bold text-warmgray-900">
                   {org.abbr.slice(0, 2)}
                 </div>
                 <div className="flex-1 min-w-0">
                   <div className="flex items-start justify-between gap-3 flex-wrap mb-1">
                     <h3 className="text-base font-bold text-warmgray-900">{org.name}</h3>
                     <a href={org.url} target="_blank" rel="noopener noreferrer"
-                      className="flex items-center gap-1 text-xs text-lavender-600 hover:text-lavender-700 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-lavender-500 rounded">
+                      className="flex items-center gap-1 text-xs text-warmgray-800 hover:text-warmgray-900 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-warmgray-700 rounded">
                       Website <ExternalLink className="w-3 h-3" aria-hidden />
                     </a>
                   </div>
                   <p className="text-sm text-warmgray-500 mb-2">{org.desc}</p>
                   <div className="flex flex-wrap gap-3 text-xs">
                     {org.phone && (
-                      <a href={`tel:${org.phone.replace(/\D/g,'')}`} className="flex items-center gap-1 text-warmgray-500 hover:text-lavender-600 transition-colors">
+                      <a href={`tel:${org.phone.replace(/\D/g,'')}`} className="flex items-center gap-1 text-warmgray-500 hover:text-warmgray-800 transition-colors">
                         <Phone className="w-3 h-3" aria-hidden />{org.phone}
                       </a>
                     )}
                     {org.email && (
-                      <a href={`mailto:${org.email}`} className="flex items-center gap-1 text-warmgray-500 hover:text-lavender-600 transition-colors">
+                      <a href={`mailto:${org.email}`} className="flex items-center gap-1 text-warmgray-500 hover:text-warmgray-800 transition-colors">
                         <Mail className="w-3 h-3" aria-hidden />{org.email}
                       </a>
                     )}
@@ -90,8 +91,8 @@ export default function AboutPage() {
         {/* Contact */}
         <section id="contact" aria-labelledby="contact-heading">
           <h2 id="contact-heading" className="text-2xl font-bold text-warmgray-900 mb-4">Contact & Corrections</h2>
-          <div className="p-6 rounded-2xl bg-lavender-50 border border-lavender-200">
-            <p className="text-sm text-lavender-800 mb-4">
+          <div className="p-6 rounded-2xl bg-warmgray-50 border border-warmgray-200">
+            <p className="text-sm text-warmgray-900 mb-4">
               Found an outdated phone number or want to add a resource? We want to keep this directory accurate.
             </p>
             <a href="mailto:erar20062009@gmail.com" className="btn-primary text-sm">

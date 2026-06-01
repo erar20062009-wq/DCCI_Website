@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import Breadcrumbs from '@/components/ui/Breadcrumbs'
 import Link from 'next/link'
 
@@ -50,8 +50,8 @@ const stages = [
 ]
 
 const colorMap: Record<string, { border: string; bg: string; badge: string; title: string; dot: string }> = {
-  sage: { border: 'border-sage-200', bg: 'bg-sage-50', badge: 'bg-sage-100 text-sage-700', title: 'text-sage-900', dot: 'bg-sage-500' },
-  amber: { border: 'border-amber-200', bg: 'bg-amber-50', badge: 'bg-amber-100 text-amber-700', title: 'text-amber-900', dot: 'bg-amber-500' },
+  sage: { border: 'border-warmgray-200', bg: 'bg-warmgray-50', badge: 'bg-warmgray-100 text-warmgray-800', title: 'text-warmgray-900', dot: 'bg-warmgray-600' },
+  amber: { border: 'border-warmgray-200', bg: 'bg-warmgray-50', badge: 'bg-warmgray-100 text-warmgray-800', title: 'text-warmgray-900', dot: 'bg-warmgray-600' },
   emergency: { border: 'border-emergency-200', bg: 'bg-emergency-50', badge: 'bg-emergency-100 text-emergency-700', title: 'text-emergency-900', dot: 'bg-emergency-400' },
 }
 
@@ -91,9 +91,9 @@ export default function DiseaseStages() {
         })}
       </div>
 
-      <div className="p-5 rounded-2xl bg-lavender-50 border border-lavender-200">
-        <p className="text-sm font-semibold text-lavender-900 mb-1">Get personalized guidance for where you are now</p>
-        <p className="text-sm text-lavender-700 mb-4">The TMH Memory Disorder Clinic social worker and the Alzheimer's Project helpline can help you understand what to expect and which services are right for your situation.</p>
+      <div className="p-5 rounded-2xl bg-warmgray-50 border border-warmgray-200">
+        <p className="text-sm font-semibold text-warmgray-900 mb-1">Get personalized guidance for where you are now</p>
+        <p className="text-sm text-warmgray-900 mb-4">The TMH Memory Disorder Clinic social worker and the Alzheimer's Project helpline can help you understand what to expect and which services are right for your situation.</p>
         <div className="flex flex-wrap gap-3">
           <Link href="/signs-diagnosis/getting-evaluated" className="btn-primary text-sm">Get evaluated</Link>
           <Link href="/care-services/respite" className="btn-secondary text-sm">Find respite care</Link>

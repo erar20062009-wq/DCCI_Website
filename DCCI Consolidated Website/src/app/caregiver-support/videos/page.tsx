@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import { ExternalLink, Play } from 'lucide-react'
 import Breadcrumbs from '@/components/ui/Breadcrumbs'
 
@@ -51,7 +51,7 @@ export default function VideosPage() {
             Alzheimer's Project Video Library
           </h2>
           <a href="https://alzheimersproject.org" target="_blank" rel="noopener noreferrer"
-            className="text-sm font-medium text-lavender-600 hover:text-lavender-700 transition-colors flex items-center gap-1 shrink-0">
+            className="text-sm font-medium text-warmgray-800 hover:text-warmgray-900 transition-colors flex items-center gap-1 shrink-0">
             Visit site <ExternalLink className="w-3.5 h-3.5" aria-hidden />
           </a>
         </div>
@@ -62,8 +62,8 @@ export default function VideosPage() {
           {apVideos.map((title) => (
             <div key={title}
               className="flex items-center gap-2.5 px-4 py-3 rounded-xl bg-white border border-warmgray-100 shadow-card">
-              <div className="w-7 h-7 rounded-lg bg-lavender-100 flex items-center justify-center shrink-0">
-                <Play className="w-3.5 h-3.5 text-lavender-600 fill-lavender-600" aria-hidden />
+              <div className="w-7 h-7 rounded-lg bg-warmgray-100 flex items-center justify-center shrink-0">
+                <Play className="w-3.5 h-3.5 text-warmgray-800 fill-warmgray-800" aria-hidden />
               </div>
               <span className="text-sm font-medium text-warmgray-800">{title}</span>
             </div>
@@ -77,7 +77,7 @@ export default function VideosPage() {
           <h2 id="ucla-videos-heading" className="text-xl font-bold text-warmgray-900">
             UCLA Alzheimer's & Dementia Care — Caregiver Videos
           </h2>
-          <span className="badge bg-sage-100 text-sage-700 shrink-0">En Español</span>
+          <span className="badge bg-warmgray-100 text-warmgray-800 shrink-0">En Español</span>
         </div>
         <p className="text-sm text-warmgray-500 mb-4">
           Free training videos on challenging behaviors from UCLA's program. <strong>Available in both English and Spanish.</strong> Linked through FSU REACH.
@@ -85,8 +85,8 @@ export default function VideosPage() {
         <div className="space-y-3">
           {uclaSections.map((item) => (
             <div key={item.title} className="flex gap-3 p-4 rounded-xl bg-white border border-warmgray-100 shadow-card">
-              <div className="w-8 h-8 rounded-lg bg-teal-100 flex items-center justify-center shrink-0">
-                <Play className="w-4 h-4 text-teal-600 fill-teal-600" aria-hidden />
+              <div className="w-8 h-8 rounded-lg bg-warmgray-100 flex items-center justify-center shrink-0">
+                <Play className="w-4 h-4 text-warmgray-700 fill-warmgray-700" aria-hidden />
               </div>
               <div>
                 <p className="text-sm font-semibold text-warmgray-900">{item.title}</p>
@@ -97,7 +97,7 @@ export default function VideosPage() {
         </div>
         <div className="mt-4">
           <a href="https://reach.med.fsu.edu" target="_blank" rel="noopener noreferrer"
-            className="text-sm font-medium text-lavender-600 hover:text-lavender-700 transition-colors flex items-center gap-1">
+            className="text-sm font-medium text-warmgray-800 hover:text-warmgray-900 transition-colors flex items-center gap-1">
             Access UCLA videos through FSU REACH <ExternalLink className="w-3.5 h-3.5" aria-hidden />
           </a>
         </div>
@@ -110,7 +110,7 @@ export default function VideosPage() {
           FSU REACH hosts short videos on what to do in dementia-related crisis situations — including emergent behavioral episodes and caregiver safety.
         </p>
         <a href="https://reach.med.fsu.edu" target="_blank" rel="noopener noreferrer"
-          className="text-sm font-medium text-lavender-600 hover:text-lavender-700 transition-colors flex items-center gap-1">
+          className="text-sm font-medium text-warmgray-800 hover:text-warmgray-900 transition-colors flex items-center gap-1">
           View FSU REACH crisis resources <ExternalLink className="w-3.5 h-3.5" aria-hidden />
         </a>
       </section>

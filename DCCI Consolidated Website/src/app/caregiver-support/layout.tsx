@@ -1,4 +1,4 @@
-import SectionSidebar from '@/components/layout/SectionSidebar'
+﻿import SectionSidebar from '@/components/layout/SectionSidebar'
 import SectionHero from '@/components/layout/SectionHero'
 import { Heart } from 'lucide-react'
 
@@ -20,8 +20,8 @@ export default function CaregiverLayout({ children }: { children: React.ReactNod
         label="Caregiver Resources"
         title="For Caregivers"
         description="Support groups, education, self-care, and community connections for family caregivers."
-        gradient="bg-gradient-to-b from-teal-50/70 to-white"
-        iconColor="text-teal-600"
+        gradient="bg-gradient-to-b from-warmgray-50/70 to-white"
+        iconColor="text-warmgray-700"
       />
       <div className="container-main py-12 md:py-16">
         <div className="flex gap-10">

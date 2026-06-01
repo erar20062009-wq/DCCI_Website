@@ -1,4 +1,4 @@
-'use client'
+﻿'use client'
 
 import { useEffect } from 'react'
 import Link from 'next/link'
@@ -49,20 +49,20 @@ export default function MobileNav() {
           <div className="flex items-center justify-between px-4 py-4 border-b border-warmgray-100">
             <Link
               href="/"
-              className="flex items-center gap-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-lavender-500 rounded"
+              className="flex items-center gap-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-warmgray-700 rounded"
               onClick={closeMobileMenu}
             >
-              <div className="w-7 h-7 rounded-lg bg-gradient-to-br from-lavender-500 to-lavender-700 flex items-center justify-center">
+              <div className="w-7 h-7 rounded-lg bg-gradient-to-br from-warmgray-700 to-warmgray-900 flex items-center justify-center">
                 <span className="text-white text-xs font-bold">BB</span>
               </div>
               <span className="text-sm font-semibold text-warmgray-900 leading-tight">
                 Big Bend<br />
-                <span className="text-lavender-600 text-xs">Brain Health</span>
+                <span className="text-warmgray-800 text-xs">Brain Health</span>
               </span>
             </Link>
 
             <Dialog.Close
-              className="p-2 rounded-lg text-warmgray-500 hover:bg-warmgray-100 hover:text-warmgray-900 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-lavender-500"
+              className="p-2 rounded-lg text-warmgray-500 hover:bg-warmgray-100 hover:text-warmgray-900 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-warmgray-700"
               aria-label="Close menu"
             >
               <X className="w-5 h-5" aria-hidden />
@@ -83,8 +83,8 @@ export default function MobileNav() {
                       className={cn(
                         'flex items-center px-4 py-3 text-sm font-medium text-warmgray-700 hover:bg-warmgray-50 hover:text-warmgray-900',
                         'transition-colors duration-150',
-                        'focus-visible:outline-none focus-visible:ring-inset focus-visible:ring-2 focus-visible:ring-lavender-500',
-                        isActive && 'text-lavender-700 bg-lavender-50'
+                        'focus-visible:outline-none focus-visible:ring-inset focus-visible:ring-2 focus-visible:ring-warmgray-700',
+                        isActive && 'text-warmgray-900 bg-warmgray-50'
                       )}
                     >
                       {item.label}
@@ -99,8 +99,8 @@ export default function MobileNav() {
                         'group flex items-center justify-between w-full px-4 py-3',
                         'text-sm font-medium text-warmgray-700 hover:bg-warmgray-50 hover:text-warmgray-900',
                         'transition-colors duration-150',
-                        'focus-visible:outline-none focus-visible:ring-inset focus-visible:ring-2 focus-visible:ring-lavender-500',
-                        isActive && 'text-lavender-700 bg-lavender-50'
+                        'focus-visible:outline-none focus-visible:ring-inset focus-visible:ring-2 focus-visible:ring-warmgray-700',
+                        isActive && 'text-warmgray-900 bg-warmgray-50'
                       )}
                     >
                       {item.label}
@@ -125,13 +125,13 @@ export default function MobileNav() {
                             className={cn(
                               'flex flex-col gap-0.5 px-6 py-2.5 transition-colors duration-150',
                               'hover:bg-warmgray-100',
-                              'focus-visible:outline-none focus-visible:ring-inset focus-visible:ring-2 focus-visible:ring-lavender-500',
-                              pathname === child.href && 'bg-lavender-50'
+                              'focus-visible:outline-none focus-visible:ring-inset focus-visible:ring-2 focus-visible:ring-warmgray-700',
+                              pathname === child.href && 'bg-warmgray-50'
                             )}
                           >
                             <span className={cn(
                               'text-sm font-medium text-warmgray-800',
-                              pathname === child.href && 'text-lavender-700'
+                              pathname === child.href && 'text-warmgray-900'
                             )}>
                               {child.label}
                             </span>
@@ -141,7 +141,7 @@ export default function MobileNav() {
 
                         <Link
                           href={item.href}
-                          className="flex items-center px-6 py-2.5 text-xs font-medium text-lavender-600 hover:text-lavender-700 transition-colors focus-visible:outline-none"
+                          className="flex items-center px-6 py-2.5 text-xs font-medium text-warmgray-800 hover:text-warmgray-900 transition-colors focus-visible:outline-none"
                         >
                           View all {item.label} →
                         </Link>
@@ -154,16 +154,16 @@ export default function MobileNav() {
 
             <div className="px-4 py-3 mt-1 border-t border-warmgray-100">
               <div className="grid grid-cols-2 gap-2">
-                <Link href="/events" className="flex items-center justify-center px-3 py-2 text-xs font-medium text-warmgray-600 bg-warmgray-100 rounded-lg hover:bg-warmgray-200 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-lavender-500">
+                <Link href="/events" className="flex items-center justify-center px-3 py-2 text-xs font-medium text-warmgray-600 bg-warmgray-100 rounded-lg hover:bg-warmgray-200 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-warmgray-700">
                   Events
                 </Link>
-                <Link href="/professionals" className="flex items-center justify-center px-3 py-2 text-xs font-medium text-warmgray-600 bg-warmgray-100 rounded-lg hover:bg-warmgray-200 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-lavender-500">
+                <Link href="/professionals" className="flex items-center justify-center px-3 py-2 text-xs font-medium text-warmgray-600 bg-warmgray-100 rounded-lg hover:bg-warmgray-200 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-warmgray-700">
                   Professionals
                 </Link>
-                <Link href="/about" className="flex items-center justify-center px-3 py-2 text-xs font-medium text-warmgray-600 bg-warmgray-100 rounded-lg hover:bg-warmgray-200 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-lavender-500">
+                <Link href="/about" className="flex items-center justify-center px-3 py-2 text-xs font-medium text-warmgray-600 bg-warmgray-100 rounded-lg hover:bg-warmgray-200 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-warmgray-700">
                   About
                 </Link>
-                <Link href="/directory" className="flex items-center justify-center px-3 py-2 text-xs font-medium text-warmgray-600 bg-warmgray-100 rounded-lg hover:bg-warmgray-200 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-lavender-500">
+                <Link href="/directory" className="flex items-center justify-center px-3 py-2 text-xs font-medium text-warmgray-600 bg-warmgray-100 rounded-lg hover:bg-warmgray-200 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-warmgray-700">
                   Directory
                 </Link>
               </div>
@@ -181,7 +181,7 @@ export default function MobileNav() {
             </Link>
             <a
               href={`tel:+18503862778`}
-              className="flex items-center justify-center gap-2 w-full text-xs font-medium text-warmgray-600 hover:text-warmgray-900 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-lavender-500 rounded"
+              className="flex items-center justify-center gap-2 w-full text-xs font-medium text-warmgray-600 hover:text-warmgray-900 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-warmgray-700 rounded"
             >
               <Phone className="w-3.5 h-3.5" aria-hidden />
               Helpline: {HELPLINE_PHONE}

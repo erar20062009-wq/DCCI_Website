@@ -1,4 +1,4 @@
-'use client'
+﻿'use client'
 
 import { useEffect, useRef, useState } from 'react'
 import { useRouter } from 'next/navigation'
@@ -60,7 +60,7 @@ export default function SearchOverlay() {
               />
               {query && (
                 <button type="button" onClick={() => setQuery('')}
-                  className="p-1 rounded text-warmgray-400 hover:text-warmgray-600 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-lavender-500"
+                  className="p-1 rounded text-warmgray-400 hover:text-warmgray-600 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-warmgray-700"
                   aria-label="Clear search">
                   <X className="w-4 h-4" aria-hidden />
                 </button>
@@ -85,7 +85,7 @@ export default function SearchOverlay() {
             <span className="flex items-center gap-1">
               <kbd className="text-xs border border-warmgray-200 rounded px-1 py-0.5">↵</kbd> search
             </span>
-            <a href="/directory" className="text-lavender-600 hover:text-lavender-700 transition-colors" onClick={close}>
+            <a href="/directory" className="text-warmgray-800 hover:text-warmgray-900 transition-colors" onClick={close}>
               Browse all resources →
             </a>
           </div>

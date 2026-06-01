@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import Link from 'next/link'
 import { Heart, AlertCircle, Phone, ExternalLink } from 'lucide-react'
 import Breadcrumbs from '@/components/ui/Breadcrumbs'
@@ -53,10 +53,10 @@ const programs = [
 ]
 
 const colorMap: Record<string, string> = {
-  lavender: 'bg-lavender-100 text-lavender-700',
-  teal: 'bg-teal-100 text-teal-700',
-  sage: 'bg-sage-100 text-sage-700',
-  healthblue: 'bg-healthblue-100 text-healthblue-700',
+  lavender: 'bg-warmgray-100 text-warmgray-800',
+  teal: 'bg-warmgray-100 text-warmgray-800',
+  sage: 'bg-warmgray-100 text-warmgray-800',
+  healthblue: 'bg-warmgray-100 text-warmgray-800',
 }
 
 export default function SelfCarePage() {
@@ -74,18 +74,18 @@ export default function SelfCarePage() {
 
       {/* Burnout warning signs */}
       <section className="mb-10" aria-labelledby="burnout-heading">
-        <div className="p-5 rounded-2xl bg-amber-50 border border-amber-200">
+        <div className="p-5 rounded-2xl bg-warmgray-50 border border-warmgray-200">
           <div className="flex items-center gap-2 mb-3">
-            <AlertCircle className="w-5 h-5 text-amber-600" aria-hidden />
-            <h2 id="burnout-heading" className="text-base font-bold text-amber-900">Signs of caregiver burnout</h2>
+            <AlertCircle className="w-5 h-5 text-warmgray-700" aria-hidden />
+            <h2 id="burnout-heading" className="text-base font-bold text-warmgray-900">Signs of caregiver burnout</h2>
           </div>
-          <p className="text-sm text-amber-800 mb-4">
+          <p className="text-sm text-warmgray-700 mb-4">
             If you recognize several of these, reach out for help — the programs below are designed specifically for this.
           </p>
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2" role="list">
             {warningSignsBurnout.map((sign) => (
-              <li key={sign} className="flex items-start gap-2 text-sm text-amber-900">
-                <div className="w-1.5 h-1.5 rounded-full bg-amber-500 shrink-0 mt-1.5" aria-hidden />
+              <li key={sign} className="flex items-start gap-2 text-sm text-warmgray-900">
+                <div className="w-1.5 h-1.5 rounded-full bg-warmgray-500 shrink-0 mt-1.5" aria-hidden />
                 {sign}
               </li>
             ))}
@@ -110,14 +110,14 @@ export default function SelfCarePage() {
                   <div className="flex flex-wrap gap-3">
                     {program.phone && (
                       <a href={`tel:${program.phone.replace(/\D/g,'')}`}
-                        className="flex items-center gap-1.5 text-sm font-medium text-lavender-600 hover:text-lavender-800 transition-colors">
+                        className="flex items-center gap-1.5 text-sm font-medium text-warmgray-800 hover:text-warmgray-900 transition-colors">
                         <Phone className="w-3.5 h-3.5" aria-hidden />
                         {program.phone}
                       </a>
                     )}
                     {program.link && (
                       <Link href={program.link}
-                        className="flex items-center gap-1.5 text-sm font-medium text-lavender-600 hover:text-lavender-800 transition-colors">
+                        className="flex items-center gap-1.5 text-sm font-medium text-warmgray-800 hover:text-warmgray-900 transition-colors">
                         Learn more →
                       </Link>
                     )}

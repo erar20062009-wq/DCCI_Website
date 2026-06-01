@@ -1,12 +1,13 @@
-import Link from 'next/link'
-import { Brain, ArrowLeft, Search } from 'lucide-react'
+﻿import Link from 'next/link'
+import { ArrowLeft, Search } from 'lucide-react'
+import BrainIcon from '@/components/ui/BrainIcon'
 
 export default function NotFound() {
   return (
     <div className="pt-header min-h-[60vh] flex items-center">
       <div className="container-narrow text-center py-16">
-        <div className="w-16 h-16 rounded-2xl bg-lavender-100 flex items-center justify-center mx-auto mb-6">
-          <Brain className="w-8 h-8 text-lavender-600" aria-hidden />
+        <div className="w-16 h-16 rounded-2xl bg-warmgray-100 flex items-center justify-center mx-auto mb-6">
+          <BrainIcon className="w-8 h-8 text-warmgray-800" />
         </div>
         <h1 className="text-3xl font-bold text-warmgray-900 mb-3">Page not found</h1>
         <p className="text-warmgray-500 mb-8 max-w-md mx-auto">

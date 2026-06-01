@@ -1,4 +1,4 @@
-'use client'
+﻿'use client'
 
 import { useEffect, useRef, useState } from 'react'
 import { usePathname } from 'next/navigation'
@@ -43,7 +43,7 @@ export default function ProgressBar() {
       className="fixed top-0 left-0 right-0 z-[60] h-0.5 bg-transparent"
     >
       <div
-        className="h-full bg-gradient-to-r from-lavender-500 to-lavender-400 transition-all duration-300 ease-out"
+        className="h-full bg-gradient-to-r from-warmgray-700 to-warmgray-400 transition-all duration-300 ease-out"
         style={{ width: `${width}%` }}
       />
     </div>

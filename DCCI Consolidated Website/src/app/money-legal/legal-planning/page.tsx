@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import { FileText, AlertCircle, ExternalLink } from 'lucide-react'
 import Breadcrumbs from '@/components/ui/Breadcrumbs'
 
@@ -32,11 +32,11 @@ export default function LegalPlanningPage() {
 
       <div className="space-y-3 mb-10">
         {documents.map((doc) => (
-          <div key={doc.name} className={`card-base p-5 ${doc.urgent ? 'border-l-4 border-l-lavender-400' : ''}`}>
+          <div key={doc.name} className={`card-base p-5 ${doc.urgent ? 'border-l-4 border-l-warmgray-400' : ''}`}>
             <div className="flex items-center gap-2 mb-2">
-              <FileText className="w-4 h-4 text-lavender-500" aria-hidden />
+              <FileText className="w-4 h-4 text-warmgray-700" aria-hidden />
               <h2 className="text-base font-bold text-warmgray-900">{doc.name}</h2>
-              {doc.urgent && <span className="badge bg-lavender-100 text-lavender-700">Do this first</span>}
+              {doc.urgent && <span className="badge bg-warmgray-100 text-warmgray-900">Do this first</span>}
             </div>
             <p className="text-sm text-warmgray-500 leading-relaxed">{doc.desc}</p>
           </div>
@@ -44,15 +44,15 @@ export default function LegalPlanningPage() {
       </div>
 
       <div className="space-y-4">
-        <div className="p-5 rounded-2xl bg-lavender-50 border border-lavender-200">
-          <h2 className="text-sm font-bold text-lavender-900 mb-2">Florida Caregiver Toolkit</h2>
-          <p className="text-sm text-lavender-700 mb-3">The DOEA provides a free downloadable guide to caregiving in Florida that includes a section on legal planning, elder law, and financial conversations.</p>
-          <a href="https://elderaffairs.org" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 text-sm font-medium text-lavender-700 hover:text-lavender-900 transition-colors">
+        <div className="p-5 rounded-2xl bg-warmgray-50 border border-warmgray-200">
+          <h2 className="text-sm font-bold text-warmgray-900 mb-2">Florida Caregiver Toolkit</h2>
+          <p className="text-sm text-warmgray-900 mb-3">The DOEA provides a free downloadable guide to caregiving in Florida that includes a section on legal planning, elder law, and financial conversations.</p>
+          <a href="https://elderaffairs.org" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 text-sm font-medium text-warmgray-900 hover:text-warmgray-900 transition-colors">
             Download from DOEA <ExternalLink className="w-3.5 h-3.5" aria-hidden />
           </a>
         </div>
         <div className="p-5 rounded-2xl bg-warmgray-50 border border-warmgray-200">
-          <p className="text-sm text-warmgray-600"><strong>Find an elder law attorney:</strong> The Florida Bar Lawyer Referral Service can connect you with elder law attorneys in the Tallahassee area. <a href="https://www.floridabar.org" target="_blank" rel="noopener noreferrer" className="text-lavender-600 hover:text-lavender-700 font-medium">floridabar.org</a></p>
+          <p className="text-sm text-warmgray-600"><strong>Find an elder law attorney:</strong> The Florida Bar Lawyer Referral Service can connect you with elder law attorneys in the Tallahassee area. <a href="https://www.floridabar.org" target="_blank" rel="noopener noreferrer" className="text-warmgray-800 hover:text-warmgray-900 font-medium">floridabar.org</a></p>
         </div>
       </div>
     </article>

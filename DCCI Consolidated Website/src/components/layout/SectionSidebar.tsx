@@ -1,4 +1,4 @@
-'use client'
+﻿'use client'
 
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
@@ -41,9 +41,9 @@ export default function SectionSidebar({ title, links }: SectionSidebarProps) {
                   href={link.href}
                   className={cn(
                     'block px-3 py-2 rounded-lg text-sm transition-all duration-150',
-                    'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-lavender-500',
+                    'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-warmgray-700',
                     isActive
-                      ? 'bg-lavender-50 text-lavender-700 font-semibold'
+                      ? 'bg-warmgray-50 text-warmgray-900 font-semibold'
                       : 'text-warmgray-600 hover:bg-warmgray-50 hover:text-warmgray-900'
                   )}
                   aria-current={isActive ? 'page' : undefined}

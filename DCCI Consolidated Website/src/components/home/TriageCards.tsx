@@ -1,4 +1,4 @@
-import Link from 'next/link'
+﻿import Link from 'next/link'
 import { ArrowRight, Search, Heart, AlertCircle, BookOpen } from 'lucide-react'
 import { cn } from '@/lib/utils/cn'
 
@@ -35,20 +35,20 @@ const cards = [
 
 const colorMap = {
   lavender: {
-    card: 'border-lavender-200 hover:border-lavender-400',
-    topAccent: 'border-t-4 border-t-lavender-500',
-    icon: 'bg-lavender-100 text-lavender-600',
-    subtitle: 'text-lavender-600 bg-lavender-50',
-    cta: 'text-lavender-700 hover:text-lavender-900',
-    hover: 'hover:bg-lavender-50/40',
+    card: 'border-warmgray-200 hover:border-warmgray-400',
+    topAccent: 'border-t-4 border-t-warmgray-800',
+    icon: 'bg-warmgray-100 text-warmgray-800',
+    subtitle: 'text-warmgray-800 bg-warmgray-50',
+    cta: 'text-warmgray-800 hover:text-warmgray-900',
+    hover: 'hover:bg-warmgray-50/40',
   },
   teal: {
-    card: 'border-teal-200 hover:border-teal-400',
-    topAccent: 'border-t-4 border-t-teal-500',
-    icon: 'bg-teal-100 text-teal-700',
-    subtitle: 'text-teal-700 bg-teal-50',
-    cta: 'text-teal-700 hover:text-teal-900',
-    hover: 'hover:bg-teal-50/40',
+    card: 'border-warmgray-200 hover:border-warmgray-400',
+    topAccent: 'border-t-4 border-t-warmgray-800',
+    icon: 'bg-warmgray-100 text-warmgray-800',
+    subtitle: 'text-warmgray-800 bg-warmgray-50',
+    cta: 'text-warmgray-800 hover:text-warmgray-900',
+    hover: 'hover:bg-warmgray-50/40',
   },
   emergency: {
     card: 'border-emergency-200 hover:border-emergency-400',
@@ -75,7 +75,7 @@ export default function TriageCards() {
               'group relative flex flex-col gap-4 p-6 rounded-2xl bg-white border-2',
               'shadow-card transition-all duration-250 ease-smooth',
               'hover:shadow-card-hover hover:-translate-y-2',
-              'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-lavender-500 focus-visible:ring-offset-2',
+              'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-warmgray-700 focus-visible:ring-offset-2',
               colors.card,
               colors.topAccent,
               colors.hover

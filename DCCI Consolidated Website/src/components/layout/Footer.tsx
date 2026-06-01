@@ -1,5 +1,6 @@
-import Link from 'next/link'
-import { Phone, Mail, ExternalLink, Brain, Heart } from 'lucide-react'
+﻿import Link from 'next/link'
+import { Phone, Mail, ExternalLink, Heart } from 'lucide-react'
+import BrainIcon from '@/components/ui/BrainIcon'
 import { SITE_NAME, HELPLINE_PHONE, ELDER_HELPLINE, NAV_LINKS } from '@/lib/utils/constants'
 
 const partnerOrgs = [
@@ -57,12 +58,12 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
           {/* Brand */}
           <div className="lg:col-span-1">
-            <Link href="/" className="flex items-center gap-2.5 mb-4 group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-lavender-500 rounded w-fit">
-              <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-lavender-500 to-lavender-700 flex items-center justify-center">
-                <Brain className="w-5 h-5 text-white" aria-hidden />
+            <Link href="/" className="flex items-center gap-2.5 mb-4 group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-warmgray-700 rounded w-fit">
+              <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-warmgray-700 to-warmgray-900 flex items-center justify-center">
+                <BrainIcon className="w-5 h-5 text-white" />
               </div>
               <div>
-                <div className="text-sm font-bold text-white group-hover:text-lavender-300 transition-colors">Big Bend Brain Health</div>
+                <div className="text-sm font-bold text-white group-hover:text-warmgray-300 transition-colors">Big Bend Brain Health</div>
                 <div className="text-xs text-warmgray-500">Memory Care Resources</div>
               </div>
             </Link>
@@ -70,12 +71,12 @@ export default function Footer() {
               A consolidated resource hub for dementia caregiving, memory care, and community support across the Big Bend region of Florida.
             </p>
             <div className="space-y-1.5 text-sm">
-              <a href={`tel:+18503862778`} className="flex items-center gap-2 text-warmgray-400 hover:text-white transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-lavender-500 rounded">
-                <Phone className="w-3.5 h-3.5 shrink-0 text-lavender-400" aria-hidden />
+              <a href={`tel:+18503862778`} className="flex items-center gap-2 text-warmgray-400 hover:text-white transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-warmgray-700 rounded">
+                <Phone className="w-3.5 h-3.5 shrink-0 text-warmgray-400" aria-hidden />
                 {HELPLINE_PHONE} (Helpline)
               </a>
-              <a href={`tel:+18009635337`} className="flex items-center gap-2 text-warmgray-400 hover:text-white transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-lavender-500 rounded">
-                <Phone className="w-3.5 h-3.5 shrink-0 text-lavender-400" aria-hidden />
+              <a href={`tel:+18009635337`} className="flex items-center gap-2 text-warmgray-400 hover:text-white transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-warmgray-700 rounded">
+                <Phone className="w-3.5 h-3.5 shrink-0 text-warmgray-400" aria-hidden />
                 {ELDER_HELPLINE} (Elder Helpline)
               </a>
             </div>
@@ -92,7 +93,7 @@ export default function Footer() {
                   <li key={link.href}>
                     <Link
                       href={link.href}
-                      className="text-sm text-warmgray-400 hover:text-white transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-lavender-500 rounded"
+                      className="text-sm text-warmgray-400 hover:text-white transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-warmgray-700 rounded"
                     >
                       {link.label}
                     </Link>
@@ -115,7 +116,7 @@ export default function Footer() {
                 href={org.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group flex flex-col gap-1 text-xs focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-lavender-500 rounded"
+                className="group flex flex-col gap-1 text-xs focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-warmgray-700 rounded"
               >
                 <span className="text-warmgray-400 group-hover:text-white transition-colors font-medium leading-snug">
                   {org.name}
@@ -137,10 +138,10 @@ export default function Footer() {
             <span>Information provided for educational purposes only.</span>
           </div>
           <div className="flex items-center gap-4">
-            <Link href="/about#accessibility" className="hover:text-warmgray-400 transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-lavender-500 rounded">
+            <Link href="/about#accessibility" className="hover:text-warmgray-400 transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-warmgray-700 rounded">
               Accessibility
             </Link>
-            <Link href="/about#privacy" className="hover:text-warmgray-400 transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-lavender-500 rounded">
+            <Link href="/about#privacy" className="hover:text-warmgray-400 transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-warmgray-700 rounded">
               Privacy
             </Link>
           </div>

@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import { ExternalLink, Globe } from 'lucide-react'
 import Breadcrumbs from '@/components/ui/Breadcrumbs'
 
@@ -43,10 +43,10 @@ const communities = [
 ]
 
 const badgeColors: Record<string, string> = {
-  lavender: 'bg-lavender-100 text-lavender-700',
-  teal: 'bg-teal-100 text-teal-700',
-  sage: 'bg-sage-100 text-sage-700',
-  healthblue: 'bg-healthblue-100 text-healthblue-700',
+  lavender: 'bg-warmgray-100 text-warmgray-800',
+  teal: 'bg-warmgray-100 text-warmgray-800',
+  sage: 'bg-warmgray-100 text-warmgray-800',
+  healthblue: 'bg-warmgray-100 text-warmgray-800',
 }
 
 export default function OnlinePage() {
@@ -65,21 +65,21 @@ export default function OnlinePage() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10">
         {communities.map((c) => (
           <a key={c.name} href={c.url} target="_blank" rel="noopener noreferrer"
-            className="group flex flex-col gap-3 p-5 rounded-2xl bg-white border border-warmgray-100 shadow-card hover:shadow-card-hover hover:-translate-y-0.5 transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-lavender-500 focus-visible:ring-offset-2">
+            className="group flex flex-col gap-3 p-5 rounded-2xl bg-white border border-warmgray-100 shadow-card hover:shadow-card-hover hover:-translate-y-0.5 transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-warmgray-700 focus-visible:ring-offset-2">
             <div className="flex items-start justify-between gap-3">
               <div className="flex items-center gap-2.5">
                 <div className={`w-9 h-9 rounded-xl flex items-center justify-center ${badgeColors[c.color]}`}>
                   <Globe className="w-4.5 h-4.5" aria-hidden />
                 </div>
                 <div>
-                  <p className="text-sm font-bold text-warmgray-900 group-hover:text-lavender-700 transition-colors">{c.name}</p>
+                  <p className="text-sm font-bold text-warmgray-900 group-hover:text-warmgray-900 transition-colors">{c.name}</p>
                   <p className="text-xs text-warmgray-400">{c.org}</p>
                 </div>
               </div>
               <span className={`badge shrink-0 ${badgeColors[c.color]}`}>{c.badge}</span>
             </div>
             <p className="text-sm text-warmgray-500 leading-relaxed">{c.desc}</p>
-            <div className="flex items-center gap-1 text-xs font-medium text-lavender-600 group-hover:gap-2 transition-all mt-auto">
+            <div className="flex items-center gap-1 text-xs font-medium text-warmgray-800 group-hover:gap-2 transition-all mt-auto">
               Visit {c.name} <ExternalLink className="w-3 h-3" aria-hidden />
             </div>
           </a>
@@ -88,7 +88,7 @@ export default function OnlinePage() {
 
       <div className="p-5 rounded-2xl bg-warmgray-50 border border-warmgray-200">
         <p className="text-sm text-warmgray-600">
-          <strong>Also available:</strong> The <strong>Alzheimer's Association 24/7 Helpline</strong> at <a href="tel:18002723900" className="text-lavender-600 font-medium hover:text-lavender-700">800-272-3900</a> provides round-the-clock disease information and care consultation — any time of day or night.
+          <strong>Also available:</strong> The <strong>Alzheimer's Association 24/7 Helpline</strong> at <a href="tel:18002723900" className="text-warmgray-800 font-medium hover:text-warmgray-900">800-272-3900</a> provides round-the-clock disease information and care consultation — any time of day or night.
         </p>
       </div>
     </article>
