@@ -1,24 +1,16 @@
 ﻿import type { Metadata } from 'next'
 import Link from 'next/link'
 import { Calendar, MapPin, Clock, ExternalLink, Phone, Users } from 'lucide-react'
-import { getUpcomingEvents } from '@/lib/sanity/queries/events'
 import { formatDate, formatTime } from '@/lib/utils/formatDate'
 import Breadcrumbs from '@/components/ui/Breadcrumbs'
-
-export const revalidate = 3600
 
 export const metadata: Metadata = {
   title: 'Events & Classes',
   description: 'Upcoming dementia education events, support group schedules, and conferences in the Big Bend region.',
 }
 
-export default async function EventsPage() {
-  let events: any[] = []
-  try {
-    events = await getUpcomingEvents(30)
-  } catch {
-    events = []
-  }
+export default function EventsPage() {
+  const events: any[] = []
 
   const recurringGroups = [
     { name: 'Mindful Moments (Early-Stage)', schedule: '2nd & 4th Thursday, 10–11:30am', location: "St. Paul's UMC, Tallahassee" },
