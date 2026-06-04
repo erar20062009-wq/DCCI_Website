@@ -5,6 +5,7 @@ import {
   FileDown, ChevronRight, Users
 } from 'lucide-react'
 import TriageCards from '@/components/home/TriageCards'
+import MapStorySection from '@/components/home/MapStorySection'
 import EmergencyCallout from '@/components/content/EmergencyCallout'
 import NewsletterSignup from '@/components/forms/NewsletterSignup'
 import { FadeIn } from '@/components/ui/FadeIn'
@@ -122,6 +123,9 @@ export default function Home() {
         <h2 id="triage-heading" className="sr-only">What do you need help with?</h2>
         <TriageCards />
       </section>
+
+      {/* Scroll-driven real map — statewide Florida → Big Bend → county markers */}
+      <MapStorySection />
 
       {/* Featured resources */}
       <section className="container-main section-padding" aria-labelledby="featured-heading">

@@ -19,6 +19,7 @@
     "clsx": "^2.1.1",
     "framer-motion": "^11.18.2",
     "lucide-react": "^0.400.0",
+    "maplibre-gl": "^5.24.0",
     "next": "^15.3.3",
     "next-intl": "^3.26.5",
     "next-sanity": "^11.6.13",
