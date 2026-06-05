@@ -4,6 +4,7 @@ export const SITE_DESCRIPTION = 'A consolidated hub for dementia caregiving reso
 export const HELPLINE_PHONE = '(850) 386-2778'
 export const ELDER_HELPLINE = '1-800-963-5337'
 export const ELDER_HELPLINE_LOCAL = '866-467-4624'
+export const SENIOR_LEGAL_HELPLINE = '1-888-895-7873'
 export const EMERGENCY = '911'
 export const CRISIS_LINE = '988'
 
@@ -50,7 +51,7 @@ export const NAV_LINKS = [
     ],
   },
   {
-    label: 'Money & Legal Help',
+    label: 'Financial and Legal Assistance',
     href: '/money-legal',
     description: 'Medicare, Medicaid, benefits, and legal planning',
     color: 'sage',
@@ -94,8 +95,9 @@ export const EMERGENCY_NUMBERS = [
   { label: 'Emergency', number: '911', description: 'Life-threatening emergencies' },
   { label: 'Suicide & Crisis', number: '988', description: '24/7 mental health crisis support' },
   { label: '211 Big Bend', number: '211', description: '24-hr crisis counseling & referral' },
-  { label: "Alzheimer's Project Helpline", number: '(850) 386-2778', description: 'Mon–Fri 9am–5pm' },
-  { label: 'Elder Helpline', number: '1-800-963-5337', description: 'Statewide resource navigation' },
+  { label: "Alzheimer's Project", number: '(850) 386-2778', description: 'Mon–Fri 9am–5pm (not a 24-hr helpline)' },
+  { label: 'Florida Dept. of Elder Affairs', number: '1-800-963-5337', description: 'Statewide resource navigation' },
+  { label: 'Florida Senior Legal Helpline', number: '1-888-895-7873', description: 'Free legal assistance for seniors' },
   { label: 'Tallahassee Memorial', number: '(850) 431-1155', description: 'TMH main line' },
   { label: 'Capital Regional', number: '(850) 325-5000', description: 'Capital Regional Medical Center' },
   { label: 'Poison Control', number: '(800) 222-1222', description: '24/7 poison emergency line' },

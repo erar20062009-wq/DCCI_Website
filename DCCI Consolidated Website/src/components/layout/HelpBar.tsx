@@ -2,12 +2,12 @@
 
 import Link from 'next/link'
 import { Phone, AlertCircle } from 'lucide-react'
-import { HELPLINE_PHONE, ELDER_HELPLINE } from '@/lib/utils/constants'
+import { ELDER_HELPLINE, ELDER_HELPLINE_LOCAL, SENIOR_LEGAL_HELPLINE } from '@/lib/utils/constants'
 
 export default function HelpBar() {
   return (
     <div
-      className="bg-warmgray-950 text-white z-50 sticky top-0"
+      className="bg-warmgray-950 text-white z-50 sticky top-0 border-b border-purple-900/30"
       style={{ height: 'var(--helpbar-height)' }}
       role="banner"
     >
@@ -19,12 +19,23 @@ export default function HelpBar() {
           </div>
 
           <a
-            href={`tel:+18503862778`}
+            href="tel:+18664674624"
             className="flex items-center gap-1 text-xs font-semibold text-white hover:text-warmgray-200 transition-colors whitespace-nowrap focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-white rounded"
-            aria-label="Call Alzheimer's Project Helpline at (850) 386-2778"
+            aria-label="Call Elder Helpline at 1-866-467-4624"
           >
-            <span className="hidden sm:inline text-warmgray-200">Helpline:</span>
-            {HELPLINE_PHONE}
+            <span className="hidden sm:inline text-warmgray-200">Elder Helpline:</span>
+            {ELDER_HELPLINE_LOCAL}
+          </a>
+
+          <span className="text-warmgray-700 hidden sm:inline" aria-hidden>·</span>
+
+          <a
+            href={`tel:+18888957873`}
+            className="flex items-center gap-1 text-xs font-semibold text-white hover:text-warmgray-200 transition-colors whitespace-nowrap focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-white rounded"
+            aria-label="Call Florida Senior Legal Helpline at 1-888-895-7873"
+          >
+            <span className="hidden sm:inline text-warmgray-200">Florida Senior Legal Helpline:</span>
+            {SENIOR_LEGAL_HELPLINE}
           </a>
 
           <span className="text-warmgray-700 hidden sm:inline" aria-hidden>·</span>
@@ -32,9 +43,9 @@ export default function HelpBar() {
           <a
             href={`tel:+18009635337`}
             className="flex items-center gap-1 text-xs font-semibold text-white hover:text-warmgray-200 transition-colors whitespace-nowrap focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-white rounded"
-            aria-label="Call Elder Helpline at 1-800-963-5337"
+            aria-label="Call Florida Department of Elder Affairs at 1-800-963-5337"
           >
-            <span className="hidden sm:inline text-warmgray-200">Elder Helpline:</span>
+            <span className="hidden sm:inline text-warmgray-200">Florida Dept. of Elder Affairs:</span>
             {ELDER_HELPLINE}
           </a>
 

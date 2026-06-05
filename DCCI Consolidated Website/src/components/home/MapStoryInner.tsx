@@ -42,7 +42,7 @@ const MARKER_CSS = `
     position: absolute;
     inset: 0;
     border-radius: 50%;
-    border: 2px solid #6b9eb5;
+    border: 2px solid #8347c0;
     opacity: 0;
     transform: scale(0.8);
     transition: opacity 0.18s ease, transform 0.18s ease;
@@ -56,7 +56,7 @@ const MARKER_CSS = `
     width: 14px;
     height: 14px;
     border-radius: 50%;
-    background: #6b9eb5;
+    background: #8347c0;
     border: 2.5px solid white;
     box-shadow: 0 2px 6px rgba(0,0,0,0.22);
     position: relative;
@@ -66,7 +66,7 @@ const MARKER_CSS = `
   .map-county-marker:hover .map-county-marker-dot,
   .map-county-marker:focus-visible .map-county-marker-dot {
     transform: scale(1.3);
-    background: #4a8098;
+    background: #6b34a8;
   }
   .map-county-marker-label {
     position: absolute;

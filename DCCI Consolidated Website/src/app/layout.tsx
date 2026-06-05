@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { Inter, Playfair_Display } from 'next/font/google'
+import { Nunito } from 'next/font/google'
 import '../styles/globals.css'
 import HelpBar from '@/components/layout/HelpBar'
 import Header from '@/components/layout/Header'
@@ -10,15 +10,10 @@ import SearchOverlay from '@/components/search/SearchOverlay'
 import ProgressBar from '@/components/ui/ProgressBar'
 import { SITE_NAME, SITE_DESCRIPTION } from '@/lib/utils/constants'
 
-const inter = Inter({
+const nunito = Nunito({
   subsets: ['latin'],
-  variable: '--font-inter',
-  display: 'swap',
-})
-
-const display = Playfair_Display({
-  subsets: ['latin'],
-  variable: '--font-display',
+  weight: ['400', '500', '600', '700', '800'],
+  variable: '--font-sans',
   display: 'swap',
 })
 
@@ -44,7 +39,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${inter.variable} ${display.variable}`}>
+    <html lang="en" className={nunito.variable}>
       <body>
         <a href="#main-content" className="skip-link">
           Skip to main content

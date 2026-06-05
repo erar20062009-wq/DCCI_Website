@@ -33,7 +33,7 @@ function TextStage({
 }) {
   return (
     <motion.div
-      className="absolute inset-0 flex flex-col justify-center"
+      className="absolute inset-0 flex flex-col justify-center px-10 md:px-16 lg:px-20"
       style={{ opacity }}
       // Visually fades in/out — SR users access content via the sr-only nav
       aria-hidden="true"
@@ -84,9 +84,9 @@ function StaticMapSection() {
             <Link
               key={county.slug}
               href={county.path}
-              className="group flex items-center gap-2.5 p-3 rounded-xl bg-white border border-warmgray-100 hover:border-[#6b9eb5]/40 hover:shadow-sm transition-all duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#4a8098] focus-visible:ring-offset-1"
+              className="group flex items-center gap-2.5 p-3 rounded-xl bg-white border border-warmgray-100 hover:border-purple-400/40 hover:shadow-sm transition-all duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-600 focus-visible:ring-offset-1"
             >
-              <span className="w-2 h-2 rounded-full bg-[#6b9eb5] shrink-0" aria-hidden />
+              <span className="w-2 h-2 rounded-full bg-purple-500 shrink-0" aria-hidden />
               <span className="text-sm font-medium text-warmgray-800 group-hover:text-warmgray-900">
                 {county.name} County
               </span>
@@ -149,7 +149,7 @@ function AnimatedMapSection() {
         <div className="sticky top-0 h-screen overflow-hidden bg-warmgray-50 flex">
 
           {/* Left: narrative copy panels */}
-          <div className="relative w-[38%] shrink-0 h-full flex flex-col justify-center px-8 md:px-12 lg:pl-16 lg:pr-8 z-10">
+          <div className="relative w-[38%] shrink-0 h-full z-10">
 
             <TextStage opacity={stage1Opacity}>
               <p className="text-sm font-semibold text-warmgray-500 uppercase tracking-wider mb-3">
@@ -166,7 +166,7 @@ function AnimatedMapSection() {
             </TextStage>
 
             <TextStage opacity={stage2Opacity}>
-              <p className="text-sm font-semibold text-[#4a8098] uppercase tracking-wider mb-3">
+              <p className="text-sm font-semibold text-purple-600 uppercase tracking-wider mb-3">
                 Expanding the reach
               </p>
               <h2 className="text-3xl md:text-4xl font-bold text-warmgray-900 mb-4 leading-tight">
@@ -180,7 +180,7 @@ function AnimatedMapSection() {
             </TextStage>
 
             <TextStage opacity={stage3Opacity}>
-              <p className="text-sm font-semibold text-[#4a8098] uppercase tracking-wider mb-3">
+              <p className="text-sm font-semibold text-purple-600 uppercase tracking-wider mb-3">
                 Local action
               </p>
               <h2 className="text-3xl md:text-4xl font-bold text-warmgray-900 mb-4 leading-tight">
@@ -196,7 +196,7 @@ function AnimatedMapSection() {
                     key={county.slug}
                     href={county.path}
                     role="listitem"
-                    className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-semibold bg-[#6b9eb5]/10 text-[#3a7088] border border-[#6b9eb5]/30 hover:bg-[#6b9eb5]/20 hover:border-[#6b9eb5]/50 transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#4a8098] focus-visible:ring-offset-1"
+                    className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-semibold bg-purple-500/10 text-purple-700 border border-purple-400/30 hover:bg-purple-500/20 hover:border-purple-400/50 transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-600 focus-visible:ring-offset-1"
                   >
                     <MapPin className="w-3 h-3" aria-hidden />
                     {county.name}
@@ -211,6 +211,7 @@ function AnimatedMapSection() {
                 <ArrowRight className="w-4 h-4" aria-hidden />
               </Link>
             </TextStage>
+
 
           </div>
 
