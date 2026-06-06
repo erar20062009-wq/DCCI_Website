@@ -124,7 +124,7 @@ function AnimatedMapSection() {
   // Drive map camera and marker visibility from scroll progress
   useMotionValueEvent(scrollYProgress, 'change', (v) => {
     mapApiRef.current?.updateCamera(v)
-    mapApiRef.current?.showMarkers(v >= 0.68)
+    mapApiRef.current?.showMarkers(v >= 0.35)
   })
 
   return (
@@ -231,7 +231,7 @@ function AnimatedMapSection() {
                   // Sync to current scroll position immediately (user may have scrolled already)
                   const p = scrollYProgress.get()
                   api.updateCamera(p)
-                  api.showMarkers(p >= 0.68)
+                  api.showMarkers(p >= 0.35)
                 }}
                 reducedMotion={false}
                 className="w-full h-full"

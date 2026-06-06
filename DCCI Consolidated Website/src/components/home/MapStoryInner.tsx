@@ -12,8 +12,8 @@ const STYLE_URL = 'https://tiles.openfreemap.org/styles/positron'
 
 // Camera start: full Florida context (statewide)
 const CAMERA_START = { center: [-84.2, 27.0] as [number, number], zoom: 5.5 }
-// Camera end:   Big Bend regional focus
-const CAMERA_END   = { center: [-84.2, 30.45] as [number, number], zoom: 8.5 }
+// Camera end: centered on the county-seat bounding box midpoint to show all 9 labeled cities
+const CAMERA_END   = { center: [-84.234, 30.157] as [number, number], zoom: 8.3 }
 
 // ─── Utilities ────────────────────────────────────────────────────────────────
 

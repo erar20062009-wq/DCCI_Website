@@ -2,7 +2,6 @@
 
 import Link from 'next/link'
 import { Search, Menu } from 'lucide-react'
-import BrainIcon from '@/components/ui/BrainIcon'
 import { cn } from '@/lib/utils/cn'
 import { useScrollHeader } from '@/lib/hooks/useScrollHeader'
 import { useMenuStore } from '@/store/menuStore'
@@ -33,9 +32,15 @@ export default function Header() {
           className="flex items-center gap-3 shrink-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-warmgray-700 rounded-lg group"
           aria-label="Big Bend Brain Health — Home"
         >
-          <div className="relative w-9 h-9 rounded-xl bg-gradient-to-br from-warmgray-400 to-warmgray-900 flex items-center justify-center shadow-sm group-hover:shadow-md transition-shadow">
-            <BrainIcon className="w-5 h-5 text-white" />
-          </div>
+          <video
+            src="/brain.mp4"
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="w-9 h-9 rounded-xl object-cover shadow-sm group-hover:shadow-md transition-shadow"
+            aria-hidden={true}
+          />
           <div className="hidden sm:block leading-tight">
             <div className="text-sm font-bold text-warmgray-900 group-hover:text-warmgray-900 transition-colors">
               Big Bend Brain Health

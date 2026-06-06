@@ -1,6 +1,5 @@
 ﻿import Link from 'next/link'
 import { Phone, Mail, ExternalLink, Heart } from 'lucide-react'
-import BrainIcon from '@/components/ui/BrainIcon'
 import { SITE_NAME, HELPLINE_PHONE, ELDER_HELPLINE, NAV_LINKS } from '@/lib/utils/constants'
 
 const partnerOrgs = [
@@ -59,9 +58,15 @@ export default function Footer() {
           {/* Brand */}
           <div className="lg:col-span-1">
             <Link href="/" className="flex items-center gap-2.5 mb-4 group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-warmgray-700 rounded w-fit">
-              <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-warmgray-700 to-warmgray-900 flex items-center justify-center">
-                <BrainIcon className="w-5 h-5 text-white" />
-              </div>
+              <video
+                src="/brain.mp4"
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="w-9 h-9 rounded-xl object-cover"
+                aria-hidden={true}
+              />
               <div>
                 <div className="text-sm font-bold text-white group-hover:text-warmgray-300 transition-colors">Big Bend Brain Health</div>
                 <div className="text-xs text-warmgray-500">Memory Care Resources</div>
@@ -133,9 +138,32 @@ export default function Footer() {
 
         {/* Bottom bar */}
         <div className="mt-8 pt-6 border-t border-warmgray-800 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-warmgray-600">
-          <div className="flex items-center gap-1">
-            <span>© {year} {SITE_NAME}.</span>
-            <span>Information provided for educational purposes only.</span>
+          <div className="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-2">
+            <div className="flex items-center gap-1">
+              <span>© {year} {SITE_NAME}.</span>
+              <span>Information provided for educational purposes only.</span>
+            </div>
+            <span className="hidden sm:inline text-warmgray-800" aria-hidden>·</span>
+            <span>
+              Brain animation by{' '}
+              <a
+                href="https://iconscout.com/contributors/robin-donvai"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline hover:text-warmgray-400 transition-colors"
+              >
+                Robin's Pixel
+              </a>
+              {' '}on{' '}
+              <a
+                href="https://iconscout.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline hover:text-warmgray-400 transition-colors"
+              >
+                IconScout
+              </a>
+            </span>
           </div>
           <div className="flex items-center gap-4">
             <Link href="/about#accessibility" className="hover:text-warmgray-400 transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-warmgray-700 rounded">
