@@ -25,7 +25,7 @@ export default function DesktopNav() {
                   <Link
                     href={item.href}
                     className={cn(
-                      'flex items-center px-3 py-2 text-sm font-medium rounded-lg transition-all duration-150 whitespace-nowrap',
+                      'flex items-center px-3 py-2 text-base font-medium rounded-lg transition-all duration-150 whitespace-nowrap',
                       'text-warmgray-700 hover:text-warmgray-900 hover:bg-warmgray-100',
                       'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-warmgray-700',
                       isActive && 'text-warmgray-900 bg-warmgray-50'
@@ -42,7 +42,7 @@ export default function DesktopNav() {
             <NavigationMenu.Item key={item.href} className="relative">
               <NavigationMenu.Trigger
                 className={cn(
-                  'group flex items-center gap-1 px-3 py-2 text-sm font-medium rounded-lg transition-all duration-150 whitespace-nowrap',
+                  'group flex items-center gap-1 px-3 py-2 text-base font-medium rounded-lg transition-all duration-150 whitespace-nowrap',
                   'text-warmgray-700 hover:text-warmgray-900 hover:bg-warmgray-100',
                   'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-warmgray-700',
                   'data-[state=open]:bg-warmgray-100 data-[state=open]:text-warmgray-900',
