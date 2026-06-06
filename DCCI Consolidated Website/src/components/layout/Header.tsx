@@ -38,7 +38,7 @@ export default function Header() {
             loop
             muted
             playsInline
-            className="w-[120px] h-[120px] rounded-xl object-cover shadow-sm group-hover:shadow-md transition-shadow"
+            className="w-[95px] h-[95px] rounded-xl object-cover shadow-sm group-hover:shadow-md transition-shadow"
             aria-hidden={true}
           />
           <div className="hidden sm:block leading-tight">
