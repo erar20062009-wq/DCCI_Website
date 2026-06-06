@@ -15,8 +15,8 @@
     --color-emergency: theme('colors.emergency.600');
     --color-accent: theme('colors.purple.500');
 
-    --header-height: 9.5rem;
-    --helpbar-height: 9.5rem;
+    --header-height: 8.5rem;
+    --helpbar-height: 2.5rem;
     --total-bar-height: 12rem;
 
     --ease-smooth: cubic-bezier(0.4, 0, 0.2, 1);
