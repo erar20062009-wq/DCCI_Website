@@ -11,27 +11,31 @@ export const metadata: Metadata = {
 const toolkitItems = [
   {
     icon: Eye,
-    title: 'Memory & Behavior Changes Checklist',
-    description: 'Track specific changes you\'ve noticed over time — memory, language, judgment, daily tasks, personality — to share with the doctor.',
+    title: 'Recognizing Memory Changes',
+    description: 'Learn what kinds of memory and thinking changes are worth bringing up with a doctor — and how to describe them clearly.',
     color: 'lavender',
+    filename: 'recognizing-memory-changes.pdf',
   },
   {
     icon: CheckSquare,
-    title: 'Caregiver Observation Guide',
-    description: 'For the family member or caregiver attending the appointment. Prompts for what to watch for and how to describe changes accurately.',
+    title: 'Changes You\'ve Noticed',
+    description: 'A structured form to document specific changes you\'ve observed over time — memory, language, judgment, daily tasks, and personality.',
     color: 'teal',
-  },
-  {
-    icon: MessageSquare,
-    title: 'Questions to Ask Your Doctor',
-    description: 'Pre-written questions about diagnosis, next steps, medication options, community resources, and what to expect.',
-    color: 'healthblue',
+    filename: 'changes-youve-noticed.pdf',
   },
   {
     icon: Pill,
-    title: 'Medication & Health History List',
-    description: 'A form to fill in current medications, dosages, health conditions, and family history to bring to the first visit.',
+    title: 'Medication List',
+    description: 'A form to record all current medications, dosages, over-the-counter supplements, and vitamins to bring to the appointment.',
     color: 'sage',
+    filename: 'medication-list.pdf',
+  },
+  {
+    icon: MessageSquare,
+    title: 'Questions to Discuss with Your Doctor',
+    description: 'Pre-written questions about diagnosis, next steps, medication options, community resources, and what to expect.',
+    color: 'healthblue',
+    filename: 'questions-for-your-doctor.pdf',
   },
 ]
 
@@ -73,38 +77,43 @@ export default function ToolkitPage() {
               <div className={`w-10 h-10 rounded-xl flex items-center justify-center shrink-0 ${colorClass}`}>
                 <Icon className="w-5 h-5" aria-hidden />
               </div>
-              <div>
+              <div className="flex-1 min-w-0">
                 <h2 className="text-base font-semibold text-warmgray-900 mb-1.5">{item.title}</h2>
-                <p className="text-sm text-warmgray-500 leading-relaxed">{item.description}</p>
+                <p className="text-sm text-warmgray-500 leading-relaxed mb-3">{item.description}</p>
+                <a
+                  href={`/toolkit/${item.filename}`}
+                  download
+                  className="inline-flex items-center gap-1.5 text-xs font-semibold text-warmgray-900 hover:text-warmgray-600 transition-colors"
+                >
+                  <FileDown className="w-3.5 h-3.5" aria-hidden />
+                  Download PDF
+                </a>
               </div>
             </div>
           )
         })}
       </div>
 
-      {/* Download CTA */}
+      {/* Full packet download */}
       <div className="p-6 rounded-2xl bg-warmgray-800 text-white mb-8">
         <div className="flex items-start gap-4">
           <div className="w-12 h-12 rounded-xl bg-warmgray-700 flex items-center justify-center shrink-0">
             <FileDown className="w-6 h-6" aria-hidden />
           </div>
           <div className="flex-1">
-            <h2 className="text-xl font-bold mb-2">Download the complete toolkit</h2>
+            <h2 className="text-xl font-bold mb-2">Download the full packet</h2>
             <p className="text-warmgray-200 text-sm mb-5 leading-relaxed">
-              All four documents in one PDF — print it at home or on any printer. No email required. Free.
-            </p>
-            <p className="text-warmgray-300 text-sm mb-4">
-              <strong className="text-warmgray-100">Note:</strong> The downloadable PDF will be available once this site is fully set up. In the meantime, call the Alzheimer's Project to request a printed copy.
+              All four documents combined into one printable PDF — bring it to your appointment or share it with a family member. Free, no email required.
             </p>
             <div className="flex flex-wrap gap-3">
-              <button
+              <a
+                href="/toolkit/visit-complete-packet.pdf"
+                download
                 className="flex items-center gap-2 px-5 py-2.5 bg-white text-warmgray-900 font-semibold rounded-xl hover:bg-warmgray-50 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white text-sm"
-                aria-label="Download toolkit PDF (coming soon)"
-                disabled
               >
                 <FileDown className="w-4 h-4" aria-hidden />
-                Download PDF (Coming Soon)
-              </button>
+                Download Full Packet (PDF)
+              </a>
               <a
                 href="tel:+18503862778"
                 className="flex items-center gap-2 px-5 py-2.5 bg-warmgray-700 text-white font-semibold rounded-xl hover:bg-warmgray-400 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white text-sm"
@@ -129,8 +138,7 @@ export default function ToolkitPage() {
         </ol>
       </div>
 
-      <div className="mt-8 flex items-center justify-between text-sm text-warmgray-400">
-        <span>Developed in collaboration with Alzheimer's Project · TMH Memory Disorder Clinic</span>
+      <div className="mt-8 flex justify-end text-sm text-warmgray-400">
         <Link href="/signs-diagnosis/getting-evaluated" className="text-warmgray-800 hover:text-warmgray-900 transition-colors font-medium flex items-center gap-1">
           Next: Getting Evaluated <ArrowRight className="w-4 h-4" aria-hidden />
         </Link>
