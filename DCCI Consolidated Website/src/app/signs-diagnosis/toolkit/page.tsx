@@ -1,6 +1,6 @@
 ﻿import type { Metadata } from 'next'
 import Link from 'next/link'
-import { FileDown, CheckSquare, MessageSquare, Pill, Eye, ArrowRight, Phone } from 'lucide-react'
+import { FileDown, CheckSquare, MessageSquare, Pill, Eye, ArrowRight } from 'lucide-react'
 import Breadcrumbs from '@/components/ui/Breadcrumbs'
 
 export const metadata: Metadata = {
@@ -113,13 +113,6 @@ export default function ToolkitPage() {
               >
                 <FileDown className="w-4 h-4" aria-hidden />
                 Download Full Packet (PDF)
-              </a>
-              <a
-                href="tel:+18503862778"
-                className="flex items-center gap-2 px-5 py-2.5 bg-warmgray-700 text-white font-semibold rounded-xl hover:bg-warmgray-400 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white text-sm"
-              >
-                <Phone className="w-4 h-4" aria-hidden />
-                Request by phone
               </a>
             </div>
           </div>
