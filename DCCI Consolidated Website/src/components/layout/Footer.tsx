@@ -46,8 +46,6 @@ export default function Footer() {
             <a href="tel:911" className="font-bold hover:text-emergency-200 transition-colors">911</a>
             <span aria-hidden>·</span>
             <a href="tel:988" className="font-bold hover:text-emergency-200 transition-colors">988 Crisis Line</a>
-            <span aria-hidden>·</span>
-            <a href="tel:+18503862778" className="font-bold hover:text-emergency-200 transition-colors">{HELPLINE_PHONE}</a>
           </div>
         </div>
       </div>
